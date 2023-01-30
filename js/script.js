@@ -43,7 +43,7 @@ let mySwiper = new Swiper ('#swiper_1', {
           switch(index){
             case 0:text='<h3 class="h3 light">Decentralized</h3> <br/> <h4 class="h4 light">Secured and easy to use</h4>';break;
             case 1:text='<h3 class="h3 light">NFT Marketplace</h3> <br/> <h4 class="h4 light">Explore, collect, and sell</h4>';break;
-            case 2:text='<h3 class="h3 light">Up to 100x Leverage</h3> <br/> <h4 class="h4 light">Perpetual Futures</h4>';break;
+            case 2:text='<h3 class="h3 light">100x Up Leverage</h3> <br/> <h4 class="h4 light">Perpetual Futures</h4>';break;
           }
           return '<span class="' + className + '">' + text + '</span>';
         }
