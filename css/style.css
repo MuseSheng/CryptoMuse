@@ -42,13 +42,11 @@ body.dark{
 
 .toper.light{
 	background-color:#FFF ;
-	/* color: #553E7F; */
 	transition: all .6s;
 }
 
 .toper.dark{
 	background-color:#27262C ;
-	/* color: #F3EEFE; */
 	transition: all .6s;
 }
 
@@ -80,7 +78,6 @@ body.dark{
 	font-weight: 400;
 	font-size: 16px;
 	text-align: center;
-	/* border: 1px solid #1DC7D3; */
 }
 
 .nav.light li a{
@@ -174,12 +171,12 @@ body.dark{
 
 /* ------------Swiper_Banner------------- */
 
-#swiper_1 {
+#swiper_1{
 	width: 100%;
 	height: 465px;
 }
 
-.swiper-slide {
+.swiper-slide{
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -284,7 +281,6 @@ h3.dark{
 	flex-grow: 1;
 	padding: 5px 10px;
 	border-radius: 0;
-
 	height: 30px;
 	text-align: center;
 	line-height: 30px;
@@ -292,10 +288,9 @@ h3.dark{
 	color: #000;
 	opacity: 1;
 	background: rgba(0, 0, 0, 0);
-	
 }
+
 .swiper-pagination-bullet-active {
-	
 	/* outline: 3px solid #FF9800; */
 	box-shadow: -5px 0px 0px 0px #FF9800;
  /*  border-left: 3px solid #FF9800; */
@@ -354,7 +349,6 @@ h3.dark{
 	background-image: url("../img/section_2_BG_dark.svg");
 	transition: all .6s;
 }
-
 
 /* ------------section_2 Content------------- */
 
@@ -443,7 +437,6 @@ h3.dark{
 	position: absolute;
 	top: 30px;
 	right: 30px;
-	
 }
 
 .card.light li{
@@ -498,7 +491,6 @@ h3.dark{
 }
 
 .wrapper_3 .content{
-
 	padding-top: 100px;
 	margin-left: 20px;
 }
@@ -603,10 +595,8 @@ h3.dark{
 }
 
 .wrapper_4 .content{
-	
 	padding-top: 100px;
 	margin-right: 30px;
-
 }
 
 .wrapper_4 h1{
@@ -709,9 +699,7 @@ h3.dark{
 	width: 100vw;
 	margin: 0 auto;
 	margin-top: 30px;
-	/* background-color: mediumorchid; */
-	display: flex;
-	
+	display: flex;	
 }
 
 .wrapper_5 .contentImg img{
@@ -767,7 +755,6 @@ h3.dark{
 .wrapper_5 .pool{
 	width: 300px;
 	height: 320px;
-	background-color: #02C708;
 	position: relative;
 	border-radius: 20px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -871,7 +858,6 @@ h3.dark{
 
 .wrapper_5 .pool .ratio.rise{
 	color: #02C708;
-
 }
 
 .wrapper_5 .pool .ratio.fall{
@@ -996,10 +982,12 @@ h3.dark{
 
 .wrapper_6 .content.light{
 	background: #FFFFFF;
+	transition: all .6;
 }
 
 .wrapper_6 .content.dark{
 	background: #27262C;
+	transition: all .6;
 }
 
 .wrapper_6 h2{	
@@ -1063,7 +1051,6 @@ h3.dark{
 }
 
 .wrapper_7 .content{
-
 	padding-top: 100px;
 	margin-left: 20px;
 }
@@ -1294,7 +1281,6 @@ h3.dark{
 	display: block;
 	text-align: left;
 	margin-right: 15px;
-
 }
 
 /* =======================tibame======================= */
@@ -1347,10 +1333,12 @@ dialog::backdrop {
 
 .connectWallet.light{
 	background: #FFFFFF;
+	transition: all .6;
 }
 
 .connectWallet.dark{
 	background: #27262C;
+	transition: all .6;
 }
 
 .connectWallet h2{
@@ -1361,10 +1349,12 @@ dialog::backdrop {
 
 .connectWallet h2.light{
 	color: #250F5B;
+	transition: all .6;
 }
 
 .connectWallet h2.dark{
 	color: #F4EEFF;
+	transition: all .6;
 }
 
 .connectWallet p{
@@ -1515,10 +1505,12 @@ dialog::backdrop {
 
 .subMenu.light li a{
 	color: #7a6eaa;
+	transition: all .6;
 }
 
 .subMenu.dark li a{
 	color: #b8add2;
+	transition: all .6;
 }
 
 /* li:hover{
@@ -1543,10 +1535,12 @@ li:visited{
 
 .banner.light{
 	background-image: url(../img/banner_light.svg);
+	transition: all .6;
 }
 
 .banner.dark{
 	background-image: url(../img/banner_dark.svg);
+	transition: all .6;
 }
 
 .text{
@@ -1565,10 +1559,12 @@ li:visited{
 
 .text h1.light{
 	color: #7645D9;
+	transition: all .6;
 }
 
 .text h1.dark{
 	color: #936CF7;
+	transition: all .6;
 }
 
 .text h2{
@@ -1580,10 +1576,12 @@ li:visited{
 	
 .text h2.light{
 	color: #280E5F;
+	transition: all .6;
 }
 	
 .text h2.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 .bannerImg img{
@@ -1655,10 +1653,12 @@ li:visited{
 
 .pair.light{
 	color: #280E5F;
+	transition: all .6;
 }
 
 .pair.dark{
 	color: #936CF7;
+	transition: all .6;
 }
 
 .farm .container{
@@ -1682,10 +1682,12 @@ li:visited{
 
 .apr h5.light, .apr .decoration.light, .earn h5.light, .earn .fee.light{
 	color: #280d5f;
+	transition: all .6;
 }
 
 .apr h5.dark, .apr .decoration.dark, .earn h5.dark, .earn .fee.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 .apr .upTo{
@@ -1724,10 +1726,12 @@ li:visited{
 
 .farmEarned h6.light{
 	color: #7645D9;
+	transition: all .6;
 }
 
 .farmEarned h6.dark{
 	color: #936CF7;
+	transition: all .6;
 }
 
 .farmEarned p{
@@ -1759,10 +1763,12 @@ li:visited{
 
 .yield p.light{
 	color: #280D5F;
+	transition: all .6;
 }
 
 .yield p.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 .farm .connect{
@@ -1775,10 +1781,12 @@ li:visited{
 
 .farm .connect.light{
 	color: #7A6EAA;
+	transition: all .6;
 }
 
 .farm .connect.dark{
 	color: #958BBB;
+	transition: all .6;
 }
 
 .farm .staked{
@@ -1789,10 +1797,12 @@ li:visited{
 
 .farm .staked.light{
 	color: #7645D9;
+	transition: all .6;
 }
 
 .farm .staked.dark{
 	color: #936CF7;
+	transition: all .6;
 }
 
 .action{
@@ -1882,10 +1892,12 @@ li:visited{
 
 .wrapperEarn .stake.light{
 	color: #280E5F;
+	transition: all .6;
 }
 
 .wrapperEarn .stake.dark{
 	color: #936CF7;
+	transition: all .6;
 }
 
 .wrapperEarn .stakeMore{
@@ -1899,10 +1911,12 @@ li:visited{
 
 .wrapperEarn .stakeMore.light{
 	color: #786EA6;
+	transition: all .6;
 }
 
 .wrapperEarn .stakeMore.dark{
 	color: #B6ADCF;
+	transition: all .6;
 }
 
 .wrapperEarn .pool .container{
@@ -1918,11 +1932,13 @@ li:visited{
 .wrapperEarn .pool .container.light{
 	background: #FAF9FA;
 	border: 1px solid #E6E3EA;
+	transition: all .6;
 }
 
 .wrapperEarn .pool .container.dark{
 	background: #08060B;
 	border: 1px solid #373240;
+	transition: all .6;
 }
 
 .flexibleApy, .lockedApr{
@@ -1941,10 +1957,12 @@ li:visited{
 
 .container .flexibleApy .h5.light, .container .lockedApr .h5.light{
 	color: #786EA6;
+	transition: all .6;
 }
 
 .container .flexibleApy .h5.dark, .container .lockedApr .h5.dark{
 	color: #B6ADCF;
+	transition: all .6;
 }
 
 .container .flexibleApy .ratial, .container .lockedApr .ratial{
@@ -1955,10 +1973,12 @@ li:visited{
 
 .container .flexibleApy .ratial.light, .container .lockedApr .ratial.light{
 	color: #280d5f;
+	transition: all .6;
 }
 
 .container .flexibleApy .ratial.dark, .container .lockedApr .ratial.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 .startEarn{
@@ -1972,10 +1992,12 @@ li:visited{
 
 .startEarn.light{
 	color: #786EA6;
+	transition: all .6;
 }
 
 .startEarn.dark{
 	color: #B6ADCF;
+	transition: all .6;
 }
 
 /* ------------NFT Marketing Place------------- */
@@ -2017,6 +2039,7 @@ li:visited{
 	/* background-color: #1DC7D3; */
 	display: flex;
 	margin: 10px;
+	padding: 0 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -2033,17 +2056,19 @@ li:visited{
 
 .column.light{
 	color: #7B6FAB;
+	transition: all .6;
 }
 
 .column.dark{
 	color: #B6ADCF;
+	transition: all .6;
 }
 
-.list{
+.topTrading .list{
 	display: flex;
 	align-items: center;
-	/* background-color: #02C708; */
 	margin: 0 10px 25px;
+	padding: 5px 10px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -2051,40 +2076,48 @@ li:visited{
 /* 	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); */
 }
 
-.list.light{
+.topTrading .list.light{
 	color: #250F5B;
+	transition: all .6;
 }
 
-.list.dark{
+.topTrading .list.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
-.list .num{
+.topTrading .list .num{
 	width: 30px;
 	text-align: left;
 }
 
-.list .topImg{
+.topTrading .list .topImg{
 	width: 68px;
 	height: 68px;
 	border-radius: 15px;
 }
 
-.list .topName{
+.topTrading .list .topName{
 	flex-grow: 1;
 	text-align: left;
 	margin-left: 20px;
 }
 
-.list .topPrice, .list .topVolume{
+.topTrading .list .topPrice, .topTrading .list .topVolume{
 	width: 120px;
 	text-align: right;
 }
 
-.notable, .topBuysToday{
+.notable{
 	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 40px;
+}
+
+.topBuysToday{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: -300px;
 }
 
 .notable h2, .topBuysToday h2{
@@ -2116,10 +2149,12 @@ li:visited{
 
 .nftCard.light{
 	background: #fff;
+	transition: all .6;
 }
 
 .nftCard.dark{
 	background: #27262C;
+	transition: all .6;
 }
 
 .notable .swiper-slide img, .topBuysToday .swiper-slide img{
@@ -2137,10 +2172,12 @@ li:visited{
 
 .nftCard .h3.light{
 	color: #280E5F;
+	transition: all .6;
 }
 
 .nftCard .h3.dark{
-	color: #936CF7;;
+	color: #936CF7;
+	transition: all .6;
 }
 
 .nftContent{
@@ -2162,10 +2199,12 @@ li:visited{
 
 .notableFloor h4.light, .notableVolume h4.lught{
 	color: #333;
+	transition: all .6;
 }
 
 .notableFloor h4.dark, .notableVolume h4.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 .notableFloor p, .notableVolume p{
@@ -2177,16 +2216,448 @@ li:visited{
 
 .notableFloor p.light, .notableVolume p.lught{
 	color: #280E5F;
+	transition: all .6;
 }
 
 .notableFloor p.dark, .notableVolume p.dark{
 	color: #F3EEFE;
+	transition: all .6;
 }
 
 
+/* ------------nftProduct------------- */
 
+.nftMenu{
+	width: 100%;
+}
 
+.nftMenu ul{
+	width: 90%;
+	height: 60px;
+	display: flex;
+	margin: 0 auto;
+}
 
+.nftMenu li{
+	height: 40px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 6px;
+}
+
+.nftMenu.light li a{
+	display: block;
+	padding: 5px 10px;
+	color: #7a6eaa;
+	border-radius: 10px;
+}
+
+.nftMenu.dark li a{
+	display: block;
+	padding: 5px 10px;
+	color: #b8add2;
+	border-radius: 10px;
+}
+
+.productImg{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.productImg img{
+	display: block;
+	width: 15vw;
+	margin-top: 50px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.productImg img.light{
+	background-color: #fff;
+	transition: all .6;
+}
+
+.productImg img.dark{
+	background-color: #1A142A;
+	transition: all .6;
+}
+
+.productImg h1{
+	display: block;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-left: 10px;
+}
+
+.productImg h1.light{
+	color: #7645D9;
+	transition: all .6s;
+}
+
+.productImg h1.dark{
+	color: #936CF7;
+	transition: all .6s;
+}
+
+.nftInfo{
+	width: 90%;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: row;
+	margin-top: 150px;
+}
+
+.nftInfo p, .nftDiscript p{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	margin-left: 10px;
+}
+
+.nftInfo .itemsNum.light, .nftInfo .createTime.light{
+	color: #250F5B;
+	transition: all .6;
+}
+
+.nftInfo .items.light, .nftInfo .create.light{
+	color: #786EA6;
+	transition: all .6;
+}
+
+.nftInfo .itemsNum.dark, .nftInfo .createTime.dark{
+	color: #F3EEFE;
+	transition: all .6;
+}
+
+.nftInfo .items.dark, .nftInfo .create.dark{
+	color: #B6ADCF;
+	transition: all .6;
+}
+
+.nftDiscript{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.nftDiscript p{
+	display: block;
+	width: 50%;
+}
+
+.nftProducts{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: -350px;
+}
+
+.nftProducts .content{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.nftCard{
+	margin: 15px;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nftCard img{
+	width: 20vw;
+}
+
+/* ------------nftSelect------------- */
+
+.buyNftTitle{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.buyNftTitle h2{
+	display: block;
+	width: 90%;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 54px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.buyNftTitle h2.light{
+	color: #280E5F;
+	transition: all .6s;
+}
+
+.buyNftTitle h2.dark{
+	color: #F3EEFE;
+	transition: all .6s;
+}
+
+.nftBuy{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin-bottom: 40px;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nftBuy.light{
+	background: #FFFFFF;
+	transition: all .6;
+}
+
+.nftBuy.dark{
+	background: #27262C;
+	transition: all .6;
+}
+
+.nftBuyImg{
+	display: flex;
+	align-items: center;
+	width: 40%;
+}	
+
+.nftBuyImg img{
+	width: 100%;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nftBuyDiscript{
+	width: 30%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
+.discriptContent{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.nftBuyDiscript h1{
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.nftBuyDiscript h1.light{
+	color: #7645D9;
+	transition: all .6;
+}
+
+.nftBuyDiscript h1.dark{
+	color: #936CF7;
+	transition: all .6;
+}
+
+.nftBuyDiscript .owned{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-bottom: 40px;
+}
+
+.nftBuyDiscript .owned.light{
+	color: #786EA6;
+	transition: all .6;
+}
+
+.nftBuyDiscript .owned.dark{
+	color: #B6ADCF;
+	transition: all .6;
+}
+
+.nftBuyDiscript .owner.light{
+	color: #250F5B;
+	transition: all .6;
+}
+
+.nftBuyDiscript .owner.dark{
+	color: #F3EEFE;
+	transition: all .6;
+}
+
+.nftBuyDiscript .currentPrince{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+.nftBuyDiscript .currentPrince.light{
+	color: rgba(0, 0, 0, 0.8);
+	transition: all .6;
+}
+
+.nftBuyDiscript .currentPrince.dark{
+	color: #F3EEFE;
+	transition: all .6;
+}
+
+.nftBuyDiscript .price{
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+.nftBuyDiscript .price.light{
+	color: rgba(0, 0, 0, 0.8);
+	transition: all .6;
+}
+
+.nftBuyDiscript .price.dark{
+	color: #F3EEFE;
+	transition: all .6;
+}
+
+.buyNftBtn{
+	display: flex;
+}
+
+.buyNftBtn .mainBtn{
+	width: 160px;
+	height: 42px;
+	border: 0;
+	left: 76px;
+	top: 354px;
+	line-height: 42px;
+	background: #5EC4D1;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	margin-left: 5px;
+	margin-right: 20px;
+}
+
+.buyNftBtn .secondBtn{
+	width: 160px;
+	height: 42px; /* border, so top & botton - 4px */
+	font-weight: 600;
+	font-size: 16px;
+	color: #5EC4D1;
+	border: 2px solid #5EC4D1;
+	background: rgba(0, 0, 0, 0);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	text-align: center;
+}
+
+.moreFromThis{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: -300px;
+}
+
+.moreFromThis h2{
+	display: block;
+	width: 90%;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 54px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+
+.moreFromThis h2.light{
+	color: #280E5F;
+	transition: all .6s;
+}
+
+.moreFromThis h2.dark{
+	color: #F3EEFE;
+	transition: all .6s;
+}
+
+.properties{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.properties h3{
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+
+.properties h3.ligh{
+	color: #250F5B;
+	transition: all .6;
+}
+
+.properties h3.dark{
+	color: #F4EEFF;
+	transition: all .6;
+}
+
+.properties .type{
+	display: flex;
+	margin: 5px 0;
+}
+
+.properties .type p{
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.properties .type p:first-child.light{
+	flex-grow: 1;
+	color: #786EA6;
+	margin-right: 20px;
+	transition: all .6;
+}
+
+.properties .type p.light{
+	color: #250F5B;
+	margin-right: 5px;
+	transition: all .6;
+}
+
+.properties .type p:last-child.light{
+	color: #936CF7;
+	margin-right: 20px;
+	transition: all .6;
+}
+
+.properties .type p:first-child.dark{
+	flex-grow: 1;
+	color: #B6ADCF;
+	margin-right: 20px;
+	transition: all .6;
+}
+
+.properties .type p.dark{
+	color: #F3EEFE;
+	margin-right: 5px;
+	transition: all .6;
+}
+
+.properties .type p:last-child.dark{
+	color: #936CF7;
+	margin-right: 20px;
+	transition: all .6;
+}
 
 
 /* ------------a------------- */
@@ -2218,6 +2689,15 @@ a:hover.dark{
 	background-color: #353546;
 	transition: all 0.6s;
 }
+/* NFT list 滑鼠移至連結 */
+.topTrading .list:hover.light{
+	background-color: #F0F4F5;
+	transition: all .6;
+}
+.topTrading .list:hover.dark{
+	background-color: #353546;
+	transition: all .6;
+}
 /* 選擇的連結 */
 a.active{
 	display:block;
@@ -2232,6 +2712,4 @@ a.active{
 	border-bottom: 0px solid #FFA800;
 	box-sizing: border-box;
 }
-
-
 

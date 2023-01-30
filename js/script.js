@@ -80,6 +80,12 @@ let mySwiper_5 = new Swiper('#swiper_5', {
     slidesPerView: 4.5,
 });
 
+let mySwiper_6 = new Swiper('#swiper_6', {
+	autoplay: true,
+    speed: 1000,
+    slidesPerView: 4.5,
+});
+
 /* light or dark mode */
 
 const changeButton = document.querySelector('#switchIcon');
