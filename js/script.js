@@ -74,11 +74,15 @@ let mySwiper_4 = new Swiper('#swiper_4', {
     slidesPerView: 4.5,
 });
 
+/* swiper_5 */
+
 let mySwiper_5 = new Swiper('#swiper_5', {
 	autoplay: true,
     speed: 1000,
     slidesPerView: 4.5,
 });
+
+/* swiper_6 */
 
 let mySwiper_6 = new Swiper('#swiper_6', {
 	autoplay: true,
@@ -124,9 +128,14 @@ function mode(){
 
 let connectBtn=document.querySelector("#show");
 let infoModal=document.querySelector("#infoModal");
+
+let scrollHide = document.querySelector('body');
+
 /* let close=document.querySelector("#close"); */
 connectBtn.addEventListener("click", function(){
     infoModal.showModal();
+
+    scrollHide.style.overflow = "hidden";
 })
 /* close.addEventListener("click", function(){
     infoModal.close();
@@ -139,6 +148,7 @@ let dialog = document.getElementsByTagName('dialog')[0];
         let isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
           && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
         if (!isInDialog) {
+            scrollHide.style.overflow = "auto";
             dialog.close();
         }
     });
