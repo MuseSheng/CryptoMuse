@@ -1,5 +1,7 @@
 AOS.init();
 
+/* localStorage to detecation light or dark mode */
+
 document.addEventListener("DOMContentLoaded", function(){
     if(JSON.parse(localStorage.getItem('mode')) === 1){
         let y=document.querySelectorAll(".dark");
@@ -25,16 +27,65 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-/* swiper_1 */
 
+/* Connect Wallet text change */
+$(document).ready(function(){    //頁面一進來就會跑的程式
+    detectionWidow();            
+    $(window).resize(function() {   //當螢幕調整過尺寸（左右拖拉時），跑的程式
+        detectionWidow();      
+    });
+});
+
+const changeHeader = document.querySelector("#connectBtnId");
+
+let newHeader = function(){       //新的字串function，把你要變換的字串寫成一個function
+    document.getElementById('logo').src='img/Logo_min.svg';
+    changeHeader.innerHTML = "CONNECT";
+}
+let originalHeader = function(){         //原始的字串function
+    document.getElementById('logo').src='img/Logo.svg';
+    changeHeader.innerHTML = "CONNECT WALLET";     //內容和你本來輸入的html code一樣
+}
+
+
+let detectionWidow = function(){      //偵測螢幕尺寸的function
+    if(window.innerWidth <= 900){ 
+        newHeader();                    
+    }
+    else{
+        originalHeader();              
+    }
+}
+
+
+
+/* Header show & hide */
+let bodyClass = document.body.classList,
+lastScrollY = 0;
+window.addEventListener('scroll', function(){
+    let st = this.scrollY;
+    /* console.log(st);
+    console.log("scrollY" + scrollY); */
+
+    // 判斷是向上捲動，而且捲軸超過 70px
+        if( st > lastScrollY && lastScrollY > 70) {
+            bodyClass.add('hideUp');
+        }else{
+            bodyClass.remove('hideUp');
+        }
+    lastScrollY = st;
+});
+
+
+/* swiper_1 */
 let title = ['Decentralized', 'NFT Marketplace', 'Up to 100x Leverage'];
 let des = ['Secured and easy to use', 'Explore, collect, and sell', 'Perpetual Futures'];
 let mySwiper = new Swiper ('#swiper_1', {
     speed: 1000,
-    autoplay: {
+    /* autoplay: {
         pauseOnMouseEnter: true,
         delay: 3000,
-      },
+      }, */
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
@@ -43,7 +94,7 @@ let mySwiper = new Swiper ('#swiper_1', {
           switch(index){
             case 0:text='<h3 class="h3 light">Decentralized</h3> <br/> <h4 class="h4 light">Secured and easy to use</h4>';break;
             case 1:text='<h3 class="h3 light">NFT Marketplace</h3> <br/> <h4 class="h4 light">Explore, collect, and sell</h4>';break;
-            case 2:text='<h3 class="h3 light">100x Up Leverage</h3> <br/> <h4 class="h4 light">Perpetual Futures</h4>';break;
+            case 2:text='<h3 class="h3 light">100xUp Leverage</h3> <br/> <h4 class="h4 light">Perpetual Futures</h4>';break;
           }
           return '<span class="' + className + '">' + text + '</span>';
         }
@@ -51,23 +102,131 @@ let mySwiper = new Swiper ('#swiper_1', {
 });
 
 /* swiper_2 */
-
-let mySwiper_2 = new Swiper('#swiper_2', {
+let swiper_topPools = new Swiper('#swiper_topPools', {
 	autoplay: true,
     speed: 1000,
-    slidesPerView: 3.2,
+    slidesPerView: 3.1,
+
+    //设置宽度为全屏  
+    /* width: window.innerWidth, */
+    //设置断点宽度
+    breakpoints: {
+        1360: {
+            slidesPerView: 2.8,
+        },
+        1280: {
+            slidesPerView: 2.5,
+        },
+        1200: {
+            slidesPerView: 2.2,
+        },
+        1000: {
+            slidesPerView: 2.1,
+        },
+        960: {
+            slidesPerView: 2,
+        },
+        900: {
+            slidesPerView: 1.8,
+        },
+        820: {
+            slidesPerView: 2.2,
+        },
+        768: {           
+            slidesPerView: 2.1,
+        },
+        680: {           
+            slidesPerView: 1.8,
+        },
+        590: {           
+            slidesPerView: 1.5,
+        },
+        500: {           
+            slidesPerView: 1.3,
+        },
+        428: {           
+            slidesPerView: 1.2,
+        },
+        400: {           
+            slidesPerView: 1.15,
+        },
+        375: {           
+            slidesPerView: 1.1,
+        },
+        //窗口缩放时设置width
+        /* on: {
+            resize: function(){
+                this.params.width = window.innerWidth;
+                this.update();
+            },
+        },   */ 
+    }
 });
 
-/* swiper_3 */
 
-let mySwiper_3 = new Swiper('#swiper_3', {
+/* swiper_3 */
+let mySwiper_3 = new Swiper('#provideNFT', {
 	autoplay: true,
     speed: 1000,
     slidesPerView: 3.5,
+
+    breakpoints: {
+        1360: {
+            slidesPerView: 3.4,
+        },
+        1336: {
+            slidesPerView: 3.2,
+        },
+        1280: {
+            slidesPerView: 2.9,
+        },
+        1200: {
+            slidesPerView: 2.5,
+        },
+        1000: {
+            slidesPerView: 2.4,
+        },
+        960: {
+            slidesPerView: 2.3,
+        },
+        900: {
+            slidesPerView: 2.1,
+        },
+        820: {
+            slidesPerView: 1.95,
+        },
+        768: {           
+            slidesPerView: 1.7,
+        },
+        680: {           
+            slidesPerView: 1.6,
+        },
+        590: {           
+            slidesPerView: 1.25,
+        },
+        500: {           
+            slidesPerView: 1.2,
+        },
+        428: {           
+            slidesPerView: 1,
+            pagination: {
+                el: '.swiper-indexNftPagination',
+                bulletElement : 'li',
+              },
+        },
+        
+        //窗口缩放时设置width
+        /* on: {
+            resize: function(){
+                this.params.width = window.innerWidth;
+                this.update();
+            },
+        },   */ 
+    }
+
 });
 
 /* swiper_4 */
-
 let mySwiper_4 = new Swiper('#swiper_4', {
 	autoplay: true,
     speed: 1000,
@@ -75,7 +234,6 @@ let mySwiper_4 = new Swiper('#swiper_4', {
 });
 
 /* swiper_5 */
-
 let mySwiper_5 = new Swiper('#swiper_5', {
 	autoplay: true,
     speed: 1000,
@@ -83,7 +241,6 @@ let mySwiper_5 = new Swiper('#swiper_5', {
 });
 
 /* swiper_6 */
-
 let mySwiper_6 = new Swiper('#swiper_6', {
 	autoplay: true,
     speed: 1000,
@@ -91,7 +248,6 @@ let mySwiper_6 = new Swiper('#swiper_6', {
 });
 
 /* light or dark mode */
-
 const changeButton = document.querySelector('#switchIcon');
 changeButton.addEventListener('click', mode);
 let light = 1;
@@ -126,8 +282,13 @@ function mode(){
     }
 } 
 
-let connectBtn=document.querySelector("#show");
-let infoModal=document.querySelector("#infoModal");
+
+/* Connect wallet lightbox close */
+changeButton.addEventListener('click', mode);
+
+
+let connectBtn = document.querySelector("#connectBtnId");
+let infoModal = document.querySelector("#infoModal");
 
 let scrollHide = document.querySelector('body');
 
@@ -143,15 +304,15 @@ connectBtn.addEventListener("click", function(){
  */
 let dialog = document.getElementsByTagName('dialog')[0];
 
-    dialog.addEventListener('click', function (event) {
-        let rect = dialog.getBoundingClientRect();
-        let isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-          && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
-        if (!isInDialog) {
-            scrollHide.style.overflow = "auto";
-            dialog.close();
-        }
-    });
+dialog.addEventListener('click', function (event) {
+    let rect = dialog.getBoundingClientRect();
+    let isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+    if (!isInDialog) {
+        scrollHide.style.overflow = "auto";
+        dialog.close();
+    }
+});
 
 /* AOS */
 

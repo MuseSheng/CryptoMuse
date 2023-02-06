@@ -10,42 +10,143 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="body" class="light">
     <!-- Toper -->
     <div class="toper light">
-        <img src="img/Logo.svg" alt="">
-        <div class="nav">
+        <a href="index.html"><img src="img/Logo.svg" alt=""></a>
+        <div class="nav light">
             <ul>
-                <li><a href="trade.html" title="Trade">Trade</a></li>
-                <li><a href="index.html" title="Trade" id="trade">Earn</a></li>
-                <li>NFT</li>
-                <li>Win</li>
-                <li style="margin-left: auto;">Voting</li>
+                <li><a class="a light" href="#">Trade</a></li>
+                <li><a class="a light" href="farm.html">Earn</a></li>
+                <li><a class="a light active" href="nftMarketing.html">NFT</a></li>
+                <li><a class="a light" href="#">Win</a></li>
+                <li><a class="a light" href="#">Voting</a></li>
             </ul>
         </div>
         <button type="button" id="switch" class="switch light">
             <label class="mode" for="switch">
-                <span id="switchIcon" class="material-icons">brightness_5</span>
+                <span id="switchIcon" class="material-icons">wb_sunny</span>
             </label>
         </button> 
         <button id="show" type="button" class="connectBtn light">CONNECT WALLET</button>
     </div>
 
-    
-    <!-- section -->
+    <!-- ===================================subMenu======================================= -->
 
-    <h1>Life of Pi</h1>
-   <!--  <p >
-        &emsp;&emsp;&emsp; He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-        He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-        He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-        He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-        He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-        He lives in Scarborough. He's a small, slim man – nomore than five foot five. Dark hair, dark eyes. Hair greyingat the temples. Can't be older than forty.            leasingcoffee-coloured complexion1. Mild fall weather, yet puts on abig winter parka with fur-lined hood2 for the walk to thediner. 
-    </p> -->
+    <div class="nftMenu light">
+        <ul>
+            <li><a class="back light" href="nftProduct_FTLTALAML.html">&#060; Back to FTLTALAML</a></li>
+        </ul>
+    </div>
+
+    <div class="zecHide">
+        <script type="text/javascript">
+            baseUrl = "https://widgets.cryptocompare.com/";
+            var scripts = document.getElementsByTagName("script");
+            var embedder = scripts[ scripts.length - 1 ];
+            (function (){
+            var appName = encodeURIComponent(window.location.hostname);
+            if(appName==""){appName="local";}
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            var theUrl = baseUrl+'serve/v1/coin/chart?fsym=CAKE&tsym=USD';
+            s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+            embedder.parentNode.appendChild(s);
+            })();
+        </script>
+
+    </div>
+    <style>
+        canvas{
+            background-color: #1A142A;
+        }
+    </style>
+  
+
+<!--     <div data-background-color="" data-currency="usd" data-coin-id="bitcoin" data-locale="en" data-height="300" data-width="" class="coingecko-coin-price-chart-widget"></div> -->
+
+    <!-- <coingecko-coin-price-chart-widget background-color="#1DC7D3"  coin-id="bitcoin" currency="usd" height="300" locale="en"></coingecko-coin-price-chart-widget>
+ -->
+    <!-- ===================================footer======================================= -->
+
+    <div class="footer light">
+        <div class="wrapper_9">
+            <img class="logo" src="img/Logo.svg" alt="">
+            <div class="list">
+                <div class="about">
+                    <!-- <p>About</p> -->
+                    <ul>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Brand</li>
+                        <li>Blog</li>
+                        <li>Community</li>
+                        <li>Litepaper</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Troubleshooting</li>
+                        <li>Guides</li>
+                    </ul>
+                </div>
+                <div class="Company">
+                    <ul>
+                        <li>Github</li>
+                        <li>Documentation</li>
+                        <li>Bug Bounty</li>
+                        <li>Audits</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <img src="img/socialMedia/Twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Telegram.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Reddit.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/GitHub.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Discord.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Medium.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Youtube.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- ===================================tibame======================================= -->
+
+    <div class="tibame">
+        <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p>參考資源：PancakeSwup, templatemonster</p>
+    </div>
+
+
+ 
+
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="js/coingecko-coin-price-chart-widget.js"></script> -->
     <script  src="js/script.js"></script>
 </body>
 </html>
