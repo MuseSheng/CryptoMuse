@@ -298,7 +298,7 @@
 
     /* =======================dialog======================= */
 
-    body dialog{
+   /*  dialog{
         width: 100vw;
         height: 50vh;
         max-width: none;
@@ -309,7 +309,6 @@
         position: fixed;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         top: 50%;
-        /* transform: translateY(50%); */
     }
 
     .connectWallet{
@@ -404,7 +403,7 @@
         line-height: 46px;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
         border-radius: 20px;
-    }
+    } */
 
 }
 
@@ -413,7 +412,7 @@
 
 
     /* Wallet */
-    .wallets .wallet{
+    /* .wallets .wallet{
         margin: 0 auto;
     }
 
@@ -423,7 +422,7 @@
 
     .learnConnect{
         width: 42.5%;
-    }
+    } */
 }
 
 /* ----------------------- 680 ----------------------- */
@@ -486,7 +485,7 @@
     }
 
     /* Wallet */
-    .wallets .wallet{
+    /* .wallets .wallet{
         margin: 0;
     }
 
@@ -510,7 +509,7 @@
     .learnConnectBtn{
         width: 165px;
         font-size: 13px;
-    }
+    } */
 
     /* section_1 */
     .section_1{
@@ -901,7 +900,7 @@
 
 
     /* Wallet */
-   .wallets .wallet{
+   /* .wallets .wallet{
         margin: 0;
     }
 
@@ -930,7 +929,7 @@
     .connectWallet .wallets li{
         flex-grow: 0;
         margin: 10px 0 0;
-    }
+    } */
 
 
 
@@ -941,11 +940,10 @@
 
     /* ==================Wallet================== */
 
-    body dialog{
+   /*  body dialog{
         height: 60vh;
         max-height: none;
         top: 40%;
-        /* transform: translateY(50%); */
     }
 
     .wallets .wallet{
@@ -982,7 +980,7 @@
         width: 50px;
         height: 50px;
     }
-
+ */
 
 }
 
@@ -1429,12 +1427,11 @@
 
     /* ==================Wallet================== */
 
-    body dialog{
+   /*  body dialog{
 
         height: 60vh;
         max-height: none;
         top: 40%;
-        /* transform: translateY(50%); */
     }
     .wallets .wallet{
         height: 80px;
@@ -1466,7 +1463,7 @@
     img{
         width: 50px;
         height: 50px;
-    }
+    } */
 
 
 
@@ -1487,13 +1484,12 @@
 
     /* ==================Wallet================== */
 
-    body dialog{
-
+    /* dialog{
         height: 60vh;
         max-height: none;
         top: 40%;
-        /* transform: translateY(50%); */
     }
+
     .wallets .wallet{
         height: 80px;
     }
@@ -1523,6 +1519,6 @@
     img{
         width: 50px;
         height: 50px;
-    }
+    } */
 
 }
