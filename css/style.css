@@ -2828,6 +2828,7 @@ footer{
 }
 
 .section_10 li{
+	width: 50px;
 	flex-grow: 1;
 	text-align: center;
 }
@@ -2837,6 +2838,7 @@ footer{
 }
 
 .phoneMenu{
+	width: 100%;
 	border: 0;
 }
 
@@ -2866,6 +2868,11 @@ footer{
 .iconStyle.dark p{
 	color: #B6ADCF;
 	transition: all .6s;
+}
+
+.phoneMenu a{
+	width: 100%;
+	display: block;
 }
 
 

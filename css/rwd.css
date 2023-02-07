@@ -582,7 +582,7 @@
         width: 128px;
         height: 42px;
         line-height: 42px;
-        right: 10px;
+        right: 30px;
         font-size: 14px;
         top:9px
     }
@@ -590,7 +590,7 @@
     .switch{
         width: 42px;
         height: 42px;
-        right: 145px;
+        right: 165px;
         top: 9.5px;
     }
 
@@ -1232,10 +1232,11 @@
     .toper img{
         height: 45px;
         top: 9px;
+        left: 10px;
     }
 
     .toper .connectBtn{
-        width: 128px;
+        width: 100px;
         height: 42px;
         line-height: 42px;
         right: 10px;
@@ -1246,7 +1247,7 @@
     .switch{
         width: 42px;
         height: 42px;
-        right: 145px;
+        right: 117px;
         top: 9.5px;
     }
 
