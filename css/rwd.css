@@ -144,7 +144,7 @@
         font-size: 20px;
     }
 
-    .footer .logo{
+    footer .logo{
         margin-right: 5vw;
     }
 }
@@ -298,7 +298,22 @@
 
     /* =======================dialog======================= */
 
-   /*  dialog{
+    #lightbox > .dialog{
+        background-color: white;
+        width: 90%;
+        max-width: 800px;
+        border-radius: 30px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        border: none;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+        overflow: hidden;
+    }
+
+  /*   dialog{
         width: 100vw;
         height: 50vh;
         max-width: none;
@@ -309,7 +324,7 @@
         position: fixed;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         top: 50%;
-    }
+    } */
 
     .connectWallet{
         width: 50%;
@@ -381,8 +396,8 @@
     }
 
     .walletImg{
-        width: 100%;
-        margin-top: 20px;
+        width: 80%;
+        margin-top: -20px;
         flex-grow: 1;
         background-image: url(../img/wallet.png);
         background-repeat: no-repeat;
@@ -403,7 +418,7 @@
         line-height: 46px;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
         border-radius: 20px;
-    } */
+    }
 
 }
 
@@ -412,7 +427,8 @@
 
 
     /* Wallet */
-    /* .wallets .wallet{
+    
+    .wallets .wallet{
         margin: 0 auto;
     }
 
@@ -422,7 +438,23 @@
 
     .learnConnect{
         width: 42.5%;
-    } */
+    }
+
+    .learnConnect h2{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .walletImg{
+        width: 100%;
+        margin-top: -20px;
+        flex-grow: 1;
+        background-image: url(../img/wallet.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
 }
 
 /* ----------------------- 680 ----------------------- */
@@ -485,20 +517,46 @@
     }
 
     /* Wallet */
-    /* .wallets .wallet{
+
+    #lightbox > .dialog{
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        border: none;
+        top: 0;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        z-index: 11;
+        overflow: hidden;
+    }
+
+    .wallets .wallet{
+        height: 100px;
+    }
+
+    .wallets ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 90px);
+        grid-gap: 10px;
+    }
+
+    .wallets .wallet{
         margin: 0;
     }
 
     .connectWallet{
         width: 67.5%;
     }
-
+    
     .learnConnect{
         width: 32.5%;
-    }
-
-    .learnConnect{
-        padding: 35px 10px 25px;
+        padding: 35px 15px 25px;
     }
 
     .learnConnect h2{
@@ -509,7 +567,7 @@
     .learnConnectBtn{
         width: 165px;
         font-size: 13px;
-    } */
+    }
 
     /* section_1 */
     .section_1{
@@ -595,7 +653,6 @@
         width: 120px;
         height: 44px; /* border, so top & botton - 4px */
         font-size: 14px;
-
     }
 
     /* section_2 */
@@ -900,12 +957,8 @@
 
 
     /* Wallet */
-   /* .wallets .wallet{
+   .wallets .wallet{
         margin: 0;
-    }
-
-    .wallets ul{
-        display: inline-flex;
     }
 
     .connectWallet{
@@ -929,9 +982,7 @@
     .connectWallet .wallets li{
         flex-grow: 0;
         margin: 10px 0 0;
-    } */
-
-
+    }
 
 }
 
@@ -940,10 +991,21 @@
 
     /* ==================Wallet================== */
 
-   /*  body dialog{
-        height: 60vh;
-        max-height: none;
-        top: 40%;
+    #lightbox > .dialog{
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        border: none;
+        top: 0;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        z-index: 11;
+        overflow: hidden;
     }
 
     .wallets .wallet{
@@ -951,15 +1013,18 @@
     }
 
     .wallets ul{
-        display: inline-flex;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 100px);
+        grid-gap: 10px;
     }
+
+    /* .connectWallet .wallets li:last-child{
+        margin-right: auto;
+    } */
 
     .connectWallet{
         padding: 15px 25px 25px;
-    }
-
-    .connectWallet .wallets li{
-        flex-grow: 0;
     }
 
     .connectWallet h2{
@@ -980,7 +1045,6 @@
         width: 50px;
         height: 50px;
     }
- */
 
 }
 
@@ -1426,13 +1490,24 @@
 
 
     /* ==================Wallet================== */
-
-   /*  body dialog{
-
-        height: 60vh;
-        max-height: none;
-        top: 40%;
+    
+    #lightbox > .dialog{
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        border: none;
+        top: 0;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        z-index: 11;
+        overflow: hidden;
     }
+
     .wallets .wallet{
         height: 80px;
     }
@@ -1444,7 +1519,6 @@
     .connectWallet .wallets li{
         margin: 10px 0 0;
     }
-
 
     .connectWallet h2{
         font-size: 16px;
@@ -1463,7 +1537,7 @@
     img{
         width: 50px;
         height: 50px;
-    } */
+    }
 
 
 
@@ -1484,14 +1558,33 @@
 
     /* ==================Wallet================== */
 
-    /* dialog{
-        height: 60vh;
-        max-height: none;
-        top: 40%;
+    #lightbox > .dialog{
+        background-color: white;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 30px 30px 0 0;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        position: absolute;
+        border: none;
+        top: 0;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 0%);
+        z-index: 11;
+        overflow: hidden;
     }
 
     .wallets .wallet{
+        width: 80px;
         height: 80px;
+    }
+
+    .wallets ul{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 85px);
+        grid-gap: 10px;
     }
 
     .connectWallet{
@@ -1519,6 +1612,6 @@
     img{
         width: 50px;
         height: 50px;
-    } */
+    }
 
 }

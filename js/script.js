@@ -284,35 +284,34 @@ function mode(){
 
 
 /* Connect wallet lightbox close */
-changeButton.addEventListener('click', mode);
+                /* changeButton.addEventListener('click', mode);
 
 
-let connectBtn = document.querySelector("#connectBtnId");
-let infoModal = document.querySelector("#infoModal");
-
-let scrollHide = document.querySelector('body');
-
+                let connectBtn = document.querySelector("#connectBtnId");
+                let infoModal = document.querySelector("#infoModal");
+                let scrollHide = document.querySelector('body');
+ */
 /* let close=document.querySelector("#close"); */
-connectBtn.addEventListener("click", function(){
-    infoModal.showModal();
+                /* connectBtn.addEventListener("click", function(){
+                    infoModal.showModal();
 
-    scrollHide.style.overflow = "hidden";
-})
+                    scrollHide.style.overflow = "hidden";
+                }) */
 /* close.addEventListener("click", function(){
     infoModal.close();
 })
  */
-let dialog = document.getElementsByTagName('dialog')[0];
+                /* let dialog = document.getElementsByTagName('dialog')[0];
 
-dialog.addEventListener('click', function (event) {
-    let rect = dialog.getBoundingClientRect();
-    let isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
-    if (!isInDialog) {
-        scrollHide.style.overflow = "auto";
-        dialog.close();
-    }
-});
+                dialog.addEventListener('click', function (event) {
+                    let rect = dialog.getBoundingClientRect();
+                    let isInDialog=(rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+                        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width);
+                    if (!isInDialog) {
+                        scrollHide.style.overflow = "auto";
+                        dialog.close();
+                    }
+                }); */
 
 /* AOS */
 
@@ -338,3 +337,43 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
   
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let lightbox_el = document.getElementById("lightbox");
+let scrollHide = document.querySelector('body');
+// 頁面上的按鈕
+let btn_modal = document.getElementsByClassName("connectBtn")[0];
+btn_modal.addEventListener("click", function(){
+  lightbox_el.classList.remove("none");
+  scrollHide.style.overflow = "hidden";
+});
+
+/* let btn_modal_close = document.getElementsByClassName("btn_modal_close")[0];
+btn_modal_close.addEventListener("click", function(){
+  lightbox_el.classList.add("none");
+  scrollHide.style.overflow = "auto";
+}); */
+
+lightbox_el.addEventListener("click", function(){
+  this.classList.add("none");
+  scrollHide.style.overflow = "auto";
+});
+
+// 點擊 lightbox 中的白色區域，不會關掉 modal
+lightbox_el.querySelector(".dialog").addEventListener("click", function(e){
+  e.stopPropagation();
+});
