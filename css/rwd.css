@@ -42,7 +42,6 @@
 
 
     /* NFT Markeplace */
-    
     .tradingList{
         display: flex;
         flex-direction: column;
@@ -51,6 +50,14 @@
 
     .listRight .column{
         display: none;
+    }
+
+    /* NFT Product */
+    .nftProducts .content{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, 32%);
+        grid-gap: 10px;
     }
 
 }
@@ -189,6 +196,7 @@
     footer .logo{
         margin-right: 5vw;
     }
+
 }
 
 
@@ -248,7 +256,7 @@
 
     .bannerImg img{
         margin-right: 50px;
-    }
+    }  
 
 }
 
@@ -291,7 +299,7 @@
     .wrapperEarn .card{
         width: 95%;
     }
-  
+
 }
 
 /* ----------------------- 820 ----------------------- */
@@ -504,6 +512,7 @@
     .bannerImg img{
         margin-right: 50px;
     }
+
 }
 
 /* ----------------------- 780 ----------------------- */
@@ -595,6 +604,20 @@
     .wrapper_9{
         margin-top: 310px;
     }
+
+    /* NFT Product */
+    .nftProducts .content{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, 49%);
+        grid-gap: 10px;
+    }
+
+    .nftDiscript p{
+        display: block;
+        width: 100%;
+    }
+
 
 }
 
@@ -1284,6 +1307,14 @@
         width: 90px;
     }
 
+    /* NFT Product */
+    .nftProducts .content{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fill, 100%);
+        grid-gap: 10px;
+    }
+
 }
 
 
@@ -1817,6 +1848,22 @@
         width: 84px;
     }
 
+    /* NFT Product */
+    .productImg img{
+        display: block;
+        width: 180px;
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .nftInfo{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: row;
+        margin-top: 110px;
+    }
 
 }
 

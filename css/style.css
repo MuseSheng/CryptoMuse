@@ -2355,8 +2355,26 @@ li:visited{
 
 /* ------------nftProduct------------- */
 
+.productBanner{
+	height: 212px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.productBanner.light{
+	background-image: url(../img/banner_light.svg);
+	transition: all .6;
+}
+
+.productBanner.dark{
+	background-image: url(../img/banner_dark.svg);
+	transition: all .6;
+}
+
 .nftMenu{
 	width: 100%;
+	margin-bottom: -60px;
 }
 
 .nftMenu ul{
@@ -2368,7 +2386,7 @@ li:visited{
 
 .nftMenu li{
 	height: 40px;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 14px;
 	line-height: 40px;
 	text-align: center;
@@ -2396,7 +2414,7 @@ li:visited{
 
 .productImg img{
 	display: block;
-	width: 15vw;
+	width: 220px;
 	margin-top: 50px;
 	padding: 10px;
 	border-radius: 15px;
@@ -2480,20 +2498,26 @@ li:visited{
 .nftProducts{
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: -350px;
+	margin-bottom: -325px;
 }
 
 .nftProducts .content{
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 50px;
+	display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 24%);
+    grid-gap: 10px;
 }
 
-.nftCard{
-	margin: 15px;
+.nftProducts .nftCard{
+	width: 100%;
+	margin: 15px 0;
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nftProducts .nftCard img{
+	width: 100%;
 }
 
 /* ------------nftSelect------------- */
