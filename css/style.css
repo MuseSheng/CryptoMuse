@@ -1606,6 +1606,7 @@ h3.dark{
 
 .subMenu{
 	width: 100%;
+	margin-top: 70px;
 }
 
 .subMenu ul{
@@ -1711,6 +1712,7 @@ li:visited{
 	flex-grow: 1;
 	margin-right: 150px;
 	margin-top: -50px;
+	display: block;
 }
 
 .wrapperEarn{
@@ -1725,6 +1727,7 @@ li:visited{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin: 0 auto;
 }
 
 .farm{
@@ -2789,7 +2792,7 @@ li:visited{
 
 footer{
 	width: 100%;
-	height: 70px;
+	height: 65px;
 	position: fixed;
 	display: none;
 	z-index: 10;
@@ -2837,16 +2840,33 @@ footer{
 	border: 0;
 }
 
-.iconStyle.light .material-icons, .iconStyle.light p{
+.iconStyle .material-icons{
+	font-size: 24px;
+}
+
+.iconStyle.light .material-icons{
 	color: #786EA6;
 	transition: all .6s;
 }
 
-.iconStyle.dark .material-icons, .iconStyle.dark p{
+.iconStyle.dark .material-icons{
 	color: #B6ADCF;
 	transition: all .6s;
 }
 
+.iconStyle p{
+	font-size: 14px;
+}
+
+.iconStyle.light p{
+	color: #786EA6;
+	transition: all .6s;
+}
+
+.iconStyle.dark p{
+	color: #B6ADCF;
+	transition: all .6s;
+}
 
 
 /* ------------a------------- */
@@ -2902,6 +2922,6 @@ a.active{
 	box-sizing: border-box;
 }
 /* footer 選擇的連結 */
-.section_10 .material-icons.active{
+.section_10 .material-icons.active, .section_10 p.active{
 	color:  #FFA800;
 }

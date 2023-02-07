@@ -208,9 +208,31 @@
     .toper .connectBtn{
         width: 128px;
     }
+
+    /* farm */ /* Pool */
+
+    .banner{
+        height: 150px;
+    }
+
+    .text h1{
+        font-size: 36px;
+    }
+
+    .text h2{
+        font-size: 28px;
+    }
+
+    .bannerImg img{
+        width: 260px;
+        margin-right: 100px;
+    }
+
+    .wrapperEarn .card{
+        width: 95%;
+    }
   
 }
-
 
 /* ----------------------- 820 ----------------------- */
 @media screen and (max-width: 820px) {
@@ -281,8 +303,8 @@
     }
 
     .section_9 .logo{
-        
-        margin-right: 5vw;
+        width: 160px;
+        margin-right: 2.5%;
     }
 
     .section_9 .list ul{
@@ -420,6 +442,22 @@
         border-radius: 20px;
     }
 
+    /* Farm */ /* Pool */
+
+    .text h1{
+        font-size: 32px;
+        margin-left: 100px;
+    }
+
+    .text h2{
+        font-size: 26px;
+        margin-left: 100px;
+    }
+
+    .bannerImg img{
+        margin-right: 50px;
+    }
+
 }
 
 /* ----------------------- 780 ----------------------- */
@@ -455,6 +493,63 @@
         background-size: contain;
         background-position: center;
     }
+
+    /* Farm */ /* Pool */
+
+    .text h1{
+        font-size: 32px;
+        margin-left: 100px;
+    }
+
+    .text h2{
+        font-size: 26px;
+        margin-left: 100px;
+    }
+
+    .bannerImg img{
+        margin-right: 50px;
+    }
+
+    .wrapperEarn .pool{
+        width: 250px;
+        padding: 15px;
+    }
+
+    .farm{
+        width: 240px;
+        padding: 20px;
+    }
+
+    .farm .subCoinLogo{
+        width: 35px;
+        left: 20px;
+    }
+
+    .farm .coinLogo{
+        width: 50px;
+        top: 45px;
+        left: 40px;
+    }
+
+    .pair{
+        margin-right: 20px;
+        top: 45px;
+    }
+
+    .wrapperEarn .pool .coinLogo{
+        width: 50px;
+        right: 30px;
+    }
+
+    .wrapperEarn .pool .subCoinLogo{
+        width: 30px;
+        right: 15px;
+    }
+
+    .wrapper_9{
+        margin-top: 310px;
+    }
+
 }
 
 /* ----------------------- 680 ----------------------- */
@@ -910,11 +1005,7 @@
     }
 
     .wrapper_9{
-        margin-top: 420px;
-    }
-
-    .section_9 .logo{
-        height: 40px;
+        margin-top: 300px;
     }
 
     .section_9 .list{
@@ -946,11 +1037,26 @@
         margin-right: auto;
         line-height: 15px;
     }
+
+
+    /* Farm */ /* Pool */
+
+    .text h1{
+        font-size: 32px;
+        margin-left: 50px;
+    }
+
+    .text h2{
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    .bannerImg img{
+        margin-right: 20px;
+    }
+
+
 }
-
-/* ==================Earn================== */
-
-
 
 /* ----------------------- 580 ----------------------- */
 @media screen and (max-width: 580px) {
@@ -1045,6 +1151,59 @@
         width: 50px;
         height: 50px;
     }
+
+    /* Farm */ /* Pool */
+    .text h1{
+        font-size: 32px;
+        margin-left: 50px;
+    }
+
+    .text h2{
+        font-size: 22px;
+        margin-left: 50px;
+    }
+
+    .bannerImg img{
+        display: none;
+        margin-right: 20px;
+    }
+
+    .farm{
+        width: 240px;
+        padding: 20px;
+    }
+
+    .farm .subCoinLogo{
+        width: 35px;
+        height: 35px;
+        top: 35px;
+        left: 20px;
+    }
+
+    .farm .coinLogo{
+        width: 50px;
+        height: 50px;
+        top: 45px;
+        left: 40px;
+    }
+
+    .pair{
+        margin-right: 20px;
+        top: 45px;
+    }
+
+    .wrapperEarn .pool .coinLogo{
+        width: 50px;
+        height: 50px;
+        right: 30px;
+    }
+
+    .wrapperEarn .pool .subCoinLogo{
+        width: 30px;
+        height: 30px;
+        right: 15px;
+    }
+
 
 }
 
@@ -1451,11 +1610,11 @@
     }
 
     .wrapper_9{
-        margin-top: 420px;
+        margin-top: 300px;
     }
 
     .section_9 .logo{
-        height: 40px;
+        width: 160px;
     }
 
     .section_9 .list{

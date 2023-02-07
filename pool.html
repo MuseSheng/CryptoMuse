@@ -12,27 +12,31 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="js/jquery-3.6.3.js"></script>
 </head>
 <body id="body" class="light">
-    <!-- Toper -->
-    <div class="toper light">
-        <a href="index.html"><img src="img/Logo.svg" alt=""></a>
-        <div class="nav light">
-            <ul>
-                <li><a class="a light" href="#">Trade</a></li>
-                <li><a class="a light active" href="farm.html">Earn</a></li>
-                <li><a class="a light" href="nftMarketing.html">NFT</a></li>
-                <li><a class="a light" href="#">Win</a></li>
-                <li><a class="a light" href="#">Voting</a></li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="toper light">
+            <a href="#"><img id="logo" src="img/Logo.svg" alt=""></a>
+            <div class="nav light">
+                <ul>
+                    <li><a class="a light" href="#">Trade</a></li>
+                    <li><a class="a light active" href="#">Earn</a></li>
+                    <li><a class="a light" href="nftMarketing.html">NFT</a></li>
+                    <li><a class="a light" href="#">Win</a></li>
+                    <li><a class="a light" href="#">Voting</a></li>
+                </ul>
+            </div>
+            <button type="button" id="switch" class="switch light">
+                <label class="mode" for="switch">
+                    <span id="switchIcon" class="material-icons">wb_sunny</span>
+                </label>
+            </button> 
+            <button id="connectBtnId" type="button" class="connectBtn light">CONNECT WALLET</button>
         </div>
-        <button type="button" id="switch" class="switch light">
-            <label class="mode" for="switch">
-                <span id="switchIcon" class="material-icons">wb_sunny</span>
-            </label>
-        </button> 
-        <button id="show" type="button" class="connectBtn light">CONNECT WALLET</button>
-    </div>
+    </header>
 
     <!-- ===================================subMenu======================================= -->
 
@@ -51,7 +55,7 @@
             <h2 class="h2 light">High APR, low risk.</h2>
         </div>
         <div class="bannerImg">
-            <img src="img/slide_3.png" alt="">
+            <img src="img/bannerFarm.png" alt="">
         </div>
     </div>
 
@@ -267,11 +271,11 @@
             </div>
         </div>
     </div>
+
+
+    <!-- ===================================section_9======================================= -->
     
-
-    <!-- ===================================footer======================================= -->
-
-    <div class="footer light">
+    <div class="section_9 light">
         <div class="wrapper_9">
             <img class="logo" src="img/Logo.svg" alt="">
             <div class="list">
@@ -286,20 +290,23 @@
                         <li>Litepaper</li>
                     </ul>
                 </div>
-                <div class="help">
+                
+                <div class="developers">
                     <ul>
-                        <li>Customer Support</li>
-                        <li>Troubleshooting</li>
-                        <li>Guides</li>
-                    </ul>
-                </div>
-                <div class="Company">
-                    <ul>
+                        <li>Developers</li>
                         <li>Github</li>
                         <li>Documentation</li>
                         <li>Bug Bounty</li>
                         <li>Audits</li>
                         <li>Careers</li>
+                    </ul>
+                </div>
+
+                <div class="help">
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Troubleshooting</li>
+                        <li>Guides</li>
                     </ul>
                 </div>
             </div>
@@ -331,73 +338,129 @@
         </div>
     </div>
 
-     <!-- ===================================tibame======================================= -->
+
+    <!-- ===================================tibame======================================= -->
 
     <div class="tibame">
         <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。</p>
         <p>參考資源：PancakeSwup, templatemonster</p>
     </div>
 
+
+    <!-- ===================================Footer======================================= -->
+
+    <footer>
+        <div class="section_10 light">
+            <ul>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <label class="iconStyle light">
+                            <span class="material-icons">currency_exchange</span>
+                            <p>Trade</p>
+                        </label>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <label class="iconStyle light">
+                            <span class="material-icons active">generating_tokens</span>
+                            <p class="active">Earn</p>
+                        </label>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <label class="iconStyle light">
+                            <span class="material-icons">category</span>
+                            <p>NFT</p>
+                        </label>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <label class="iconStyle light">
+                            <span class="material-icons">emoji_events</span>
+                            <p>Win</p>
+                        </label>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <label class="iconStyle light">
+                            <span class="material-icons">more_horiz</span>
+                            <p>More</p>
+                        </label>
+                    </button> 
+                </li>
+            </ul>
+        </div>
+    </footer>    
+
+
     <!-- ===================================dialog======================================= -->
 
-    <dialog id="infoModal">
-        <div class="dialogContent light">
-            <div class="connectWallet light">
-                <h2 class="h2 light">Connect Wallet</h2>
-                <p class="p light">Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone.</p>
-                <div class="wallets">
-                    <ul>
-                        <li>
-                            <div class="wallet">
-                                <img src="img/wallets/MetaMask.png" alt="">
-                                <p class="p light">Metamask</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wallet">
-                                <img src="img/wallets/Binance.png" alt="">
-                                <p class="p light">Binance</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wallet">
-                                <img src="img/wallets/TP.png" alt="">
-                                <p class="p light">Token&nbsp;Pocket</p>
-                            </div>
-                        </li>
-                        </li>
-                        <li>
-                            <div class="wallet">
-                                <img src="img/wallets/Phantom.png" alt="">
-                                <p class="p light">Phantom</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wallet">
-                                <img src="img/wallets/Blocto.png" alt="">
-                                <p class="p light">Blocto</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wallet">
-                                <div class="moreWallet light"></div>
-                                <p class="p light">More</p>
-                            </div>
-                        </li>
-                    </ul>
+
+    <div id="lightbox" class="none">
+        <div class="dialog">
+            <div class="dialogContent light">
+                <div class="connectWallet light">
+                    <h2 class="h2 light">Connect Wallet</h2>
+                    <p class="p light">Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone.</p>
+                    <div class="wallets">
+                        <ul>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/MetaMask.png" alt="">
+                                    <p class="p light">Metamask</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Binance.png" alt="">
+                                    <p class="p light">Binance</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/TP.png" alt="">
+                                    <p class="p light">Token&nbsp;Pocket</p>
+                                </div>
+                            </li>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Phantom.png" alt="">
+                                    <p class="p light">Phantom</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Blocto.png" alt="">
+                                    <p class="p light">Blocto</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <div class="moreWallet light"></div>
+                                    <p class="p light">More</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="learnConnect">
+                    <h2 class="h2 light">Haven’t got a wallet yet?</h2>
+                    <div class="walletImg">
+                        <!-- <img src="img/wallet.png" alt=""> -->
+                    </div>
+                    <button type="button" class="learnConnectBtn light">Learn How to Connect</button>
+                </div> 
             </div>
-            <div class="learnConnect">
-                <h2 class="h2 light">Haven’t got a wallet yet?</h2>
-                <div class="walletImg">
-                    <img src="img/wallet.png" alt="">
-                </div>
-                <button type="button" class="learnConnectBtn light">Learn How to Connect</button>
-            </div> 
         </div>
         <!-- <button id="close">close</button> -->
-    </dialog>
+        <!--  <button type="button" class="btn_modal_close">關閉</button> -->
 
+    </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
