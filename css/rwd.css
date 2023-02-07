@@ -27,6 +27,32 @@
         margin-top: 80px;
     }
 
+    /* Banner */
+    .text h1{
+        margin-left: 120px;
+    }
+
+    .text h2{
+        margin-left: 120px;
+    }
+
+    .bannerImg img{
+        margin-right: 120px;
+    }
+
+
+    /* NFT Markeplace */
+    
+    .tradingList{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .listRight .column{
+        display: none;
+    }
+
 }
 
 /* ----------------------- 1020 ----------------------- */
@@ -62,6 +88,22 @@
         padding-bottom: 0px;
         padding-top: 20px;
     }
+
+
+
+    /* Banner */
+    .text h1{
+        margin-left: 105px;
+    }
+
+    .text h2{
+        margin-left: 105px;
+    }
+
+    .bannerImg img{
+        margin-right: 105px;
+    }
+
 
 }
 
@@ -192,6 +234,22 @@
         padding-top: 20px;
     }
  
+    /* Banner */
+    /* Farm */ /* Pool */
+    .text h1{
+        font-size: 32px;
+        margin-left: 100px;
+    }
+
+    .text h2{
+        font-size: 26px;
+        margin-left: 100px;
+    }
+
+    .bannerImg img{
+        margin-right: 50px;
+    }
+
 }
 
 /* ----------------------- 900 ----------------------- */
@@ -217,10 +275,12 @@
 
     .text h1{
         font-size: 36px;
+        margin-left: 100px;
     }
 
     .text h2{
         font-size: 28px;
+        margin-left: 100px;
     }
 
     .bannerImg img{
@@ -335,19 +395,6 @@
         overflow: hidden;
     }
 
-  /*   dialog{
-        width: 100vw;
-        height: 50vh;
-        max-width: none;
-        max-height: none;
-        padding: 0;
-        border: none;
-        border-radius: 30px 30px 0 0;
-        position: fixed;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-        top: 50%;
-    } */
-
     .connectWallet{
         width: 50%;
         padding: 35px 25px;
@@ -457,7 +504,6 @@
     .bannerImg img{
         margin-right: 50px;
     }
-
 }
 
 /* ----------------------- 780 ----------------------- */
@@ -494,16 +540,16 @@
         background-position: center;
     }
 
+    /* Banner */
     /* Farm */ /* Pool */
-
     .text h1{
         font-size: 32px;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .text h2{
         font-size: 26px;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     .bannerImg img{
@@ -778,7 +824,6 @@
         font-size: 26px;
         line-height: 42px;
         margin: 0;
-        margin-top: 20px;
     }
 
     .wrapper_2 h5{
@@ -1038,23 +1083,33 @@
         line-height: 15px;
     }
 
-
+    /* Banner */
     /* Farm */ /* Pool */
-
     .text h1{
-        font-size: 32px;
-        margin-left: 50px;
+        font-size: 28px;
+        margin-left: 30px;
     }
 
     .text h2{
-        font-size: 22px;
-        margin-left: 50px;
+        font-size: 20px;
+        margin-left: 30px;
     }
 
     .bannerImg img{
         margin-right: 20px;
     }
 
+    .tradingList .listLeft, .tradingList .listRight{
+        margin: 0;
+    }
+
+    .topTrading h2{
+        font-size: 22px;
+    }
+
+    .notable h2, .topBuysToday h2{
+        font-size: 22px;
+    }
 
 }
 
@@ -1147,9 +1202,14 @@
         background-size: cover;  
     }
    
-    img{
+    .wallets img{
         width: 50px;
         height: 50px;
+    }
+
+    /* Nav */
+    .subMenu ul{
+        width: 428px;
     }
 
     /* Farm */ /* Pool */
@@ -1204,6 +1264,25 @@
         right: 15px;
     }
 
+    /* NFT */
+    .column{
+        margin: 0;
+        padding: 0;
+    }
+
+    .topTrading .list{
+        font-size: 14px;
+        margin: 0 0 25px;
+        padding: 5px 0;
+    }
+
+    .column .floorPrice, .column .volume{
+        width: 90px;
+    }
+
+    .topTrading .list .topPrice, .topTrading .list .topVolume{
+        width: 90px;
+    }
 
 }
 
@@ -1384,7 +1463,6 @@
         font-size: 26px;
         line-height: 42px;
         margin: 0;
-        margin-top: 20px;
     }
 
     .wrapper_2 h5{
@@ -1584,7 +1662,7 @@
     /* section_8 */
 
     .wrapper_8{
-        margin-top: 110px;
+        margin-top: 80px;
     }
 
     .wrapper_8 h2{
@@ -1597,6 +1675,7 @@
         width: 80%;
         margin: 0 auto;
         font-size: 16px;
+        line-height: 24px;
     }
 
     .wrapper_8 .connectBtn{
@@ -1607,11 +1686,16 @@
     /* section_9 */
 
     .section_9{
-        height: 1445px;
+        height: 1350px;
     }
 
     .wrapper_9{
+        width: 100%;
         margin-top: 300px;
+    }
+
+    .learn{
+        margin-top: 20px;
     }
 
     .section_9 .logo{
@@ -1641,7 +1725,7 @@
     /* tibame */
 
     .tibame{
-        margin-top: 1330px;
+        margin-top: 1220px;
         font-size: 9px;
         margin-left: auto;
         margin-right: auto;
@@ -1694,23 +1778,47 @@
         background-size: cover;  
     }
    
-    img{
+    .wallets img{
         width: 50px;
         height: 50px;
     }
 
+    /* Nav */
+    .subMenu ul{
+        width: 375px;
+    }
+
+    .subMenu li{
+        width: 110px;
+        font-size: 14px;
+    }
+
+    /* NFT */
+    .topTrading .list .topImg{
+        width: 45px;
+        height: 45px;
+        border-radius: 8px;
+    }
+
+    .topTrading h2{
+        font-size: 20px;
+        margin: 20px 0 10px;
+    }
+
+    .column{
+        font-size: 14px;
+    }
+
+    .topTrading .list{
+        font-size: 12px;
+    }
+
+    .column .floorPrice, .column .volume{
+        width: 84px;
+    }
 
 
 }
-
-
-
-
-
-/* ==================Earn================== */
-
-
-
 
 
 /* ----------------------- 375 ----------------------- */
@@ -1769,7 +1877,7 @@
         background-size: cover;  
     }
    
-    img{
+    .wallets img{
         width: 50px;
         height: 50px;
     }

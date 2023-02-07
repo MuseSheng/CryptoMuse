@@ -1610,16 +1610,18 @@ h3.dark{
 }
 
 .subMenu ul{
+	width: 500px;
 	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 }
 
 .subMenu li{
-	width: 100px;
+	flex-grow: 1;
 	height: 50px;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 18px;
 	line-height: 50px;
 	text-align: center;
@@ -2266,6 +2268,7 @@ li:visited{
 }
 
 .nftCard{
+	width: 300px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
 	margin-bottom: 10px; /* for shadow show */
@@ -2282,8 +2285,8 @@ li:visited{
 	transition: all .6;
 }
 
-.notable .swiper-slide img, .topBuysToday .swiper-slide img{
-	width: 20vw;
+.notable img, .topBuysToday img{
+	width: 300px;
 }
 
 .nftCard .h3{
@@ -2491,10 +2494,6 @@ li:visited{
 	align-items: center;
 	justify-content: center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.nftCard img{
-	width: 20vw;
 }
 
 /* ------------nftSelect------------- */
