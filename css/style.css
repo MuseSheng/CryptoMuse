@@ -2408,6 +2408,8 @@ li:visited{
 
 .nftMenu.dark li a{
 	display: block;
+	position: relative;
+	z-index: 5;
 	padding: 5px 10px;
 	color: #b8add2;
 	border-radius: 10px;
@@ -3221,12 +3223,12 @@ a:visited{
 a:hover.light{
 	display:block;
 	background-color: #F0F4F5;
-	transition: all 0.6s;
+	transition: all 0.3s;
 }
 a:hover.dark{
 	display:block;
 	background-color: #353546;
-	transition: all 0.6s;
+	transition: all 0.3s;
 }
 /* nav 滑鼠移至連結 */
 .nav a:hover.light{
@@ -3240,11 +3242,22 @@ a:hover.dark{
 /* NFT list 滑鼠移至連結 */
 .topTrading .list:hover.light{
 	background-color: #F0F4F5;
-	transition: all .6;
+	transition: all .3s;
 }
 .topTrading .list:hover.dark{
 	background-color: #353546;
-	transition: all .6;
+	transition: all .3s;
+}
+/* back 滑鼠移至連結 */
+.nftMenu a:hover.light{
+	color: #7645D9;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s;
+}
+.nftMenu a:hover.dark{
+	color: #936CF7;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s;
 }
 /* 選擇的連結 */
 a.active{
