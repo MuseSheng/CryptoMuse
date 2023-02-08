@@ -2740,6 +2740,7 @@ li:visited{
 	width: 200px;
 	height: 46px;
 	border: 0;
+	font-weight: 700;
 	line-height: 46px;
 	background: #5EC4D1;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
@@ -2880,8 +2881,9 @@ li:visited{
 }
 
 .properties .type p:last-child.light{
+	width: 68px;
 	color: #936CF7;
-	/* color: #B8ADD2; */
+	margin-right: 0px;
 	transition: all .6;
 }
 
@@ -2899,8 +2901,9 @@ li:visited{
 }
 
 .properties .type p:last-child.dark{
+	width: 68px;
 	color: #936CF7;
-	margin-right: 20px;
+	margin-right: 0px;
 	transition: all .6;
 }
 
