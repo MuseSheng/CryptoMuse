@@ -352,11 +352,67 @@ let mySwiper_5 = new Swiper('#swiper_5', {
     }
 });
 
+/* buy NFT page */
 /* swiper_6 */
 let mySwiper_6 = new Swiper('#swiper_6', {
 	autoplay: true,
     speed: 1000,
-    slidesPerView: 4.5,
+    slidesPerView: 5.6,
+
+    breakpoints: {
+        1920: {
+            slidesPerView: 5.1,
+        },
+        1680: {
+            slidesPerView: 4.7,
+        },
+        1440: {
+            slidesPerView: 4.5,
+        },
+        1360: {
+            slidesPerView: 4.5,
+        },
+        1336: {
+            slidesPerView: 4.1,
+        },
+        1280: {
+            slidesPerView: 3.8,
+        },
+        1200: {
+            slidesPerView: 3.1,
+        },
+        1000: {
+            slidesPerView: 2.9,
+        },
+        960: {
+            slidesPerView: 2.7,
+        },
+        900: {
+            slidesPerView: 2.5,
+        },
+        820: {
+            slidesPerView: 2.4,
+        },
+        768: {           
+            slidesPerView: 2.1,
+        },
+        680: {           
+            slidesPerView: 1.8,
+        },
+        590: {           
+            slidesPerView: 1.55,
+        },
+        500: {           
+            slidesPerView: 1.3,
+        },
+        428: {           
+            slidesPerView: 1.2,
+        /* pagination: {
+            el: '.swiper-indexNftPagination',
+            bulletElement : 'li',
+            }, */
+        },  
+    }
 });
 
 /* light or dark mode */

@@ -12,99 +12,203 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="js/jquery-3.6.3.js"></script>
 </head>
 <body id="body" class="light">
-    <!-- Toper -->
-    <div class="toper light">
-        <a href="index.html"><img src="img/Logo.svg" alt=""></a>
-        <div class="nav light">
-            <ul>
-                <li><a class="a light" href="#">Trade</a></li>
-                <li><a class="a light" href="farm.html">Earn</a></li>
-                <li><a class="a light active" href="nftMarketing.html">NFT</a></li>
-                <li><a class="a light" href="#">Win</a></li>
-                <li><a class="a light" href="#">Voting</a></li>
-            </ul>
+    <!-- Header -->
+    <header>
+        <div class="toper light">
+            <a href="index.html"><img id="logo" src="img/Logo.svg" alt=""></a>
+            <div class="nav light">
+                <ul>
+                    <li><a class="a light" href="#">Trade</a></li>
+                    <li><a class="a light" href="farm.html">Earn</a></li>
+                    <li><a class="a light" href="nftMarketing.html">NFT</a></li>
+                    <li><a class="a light" href="#">Win</a></li>
+                    <li><a class="a light" href="#">Voting</a></li>
+                </ul>
+            </div>
+            <button type="button" id="switch" class="switch light">
+                <label class="mode" for="switch">
+                    <span id="switchIcon" class="material-icons">wb_sunny</span>
+                </label>
+            </button> 
+            <button id="connectBtnId" type="button" class="connectBtn light">CONNECT WALLET</button>
         </div>
-        <button type="button" id="switch" class="switch light">
-            <label class="mode" for="switch">
-                <span id="switchIcon" class="material-icons">wb_sunny</span>
-            </label>
-        </button> 
-        <button id="show" type="button" class="connectBtn light">CONNECT WALLET</button>
-    </div>
+    </header>
 
     <!-- ===================================subMenu======================================= -->
 
-    <div class="nftMenu light">
+    <div class="subMenu light">
         <ul>
-            <li><a class="back light" href="nftProduct_FTLTALAML.html">&#060; Back to FTLTALAML</a></li>
+            <li><a class="a light" href="nftMarketing.html">Overview</a></li>
+            <li><a class="a light active" href="#">Collections</a></li>
+            <li><a class="a light" href="#">Activity</a></li>
         </ul>
     </div>
 
     <!-- ===================================section_2======================================= -->
-    <div class="buyNftTitle">
-        <h2 class="h2 light">Collection</h2>
-    </div>
     
-    <div class="nftBuy light">
-        <!-- <div class="properties">
-            <h3 class="h3 light">Properties</h3>
-            <div class="type">
-                <p class="p light">BACKGROUND</p>
-                <p class="p light">AQUA BLUE</p>
-                <p class="p light">(9.98%)</p>
+    <div class="buyNFTBanner light">
+        <div class="nftMenu light">
+            <ul>
+                <li><a class="back light" href="nftProduct_FTLTALAML.html">&#060; Back to FTLTALAML</a></li>
+            </ul>
+            <!-- <div class="buyNftTitle">
+                <h2 class="h2 light">Collection</h2>
+            </div> -->
+            <div class="nftBuy light">
+                <div class="nftBuyImg">
+                    <img class="img light" src="img/NFT/FTLTALAML/FTLTALAML_1.png" alt="">
+                </div>
+                <div class="nftBuyDiscript">
+                    <div class="discriptContent">
+                        <h1 class="h1 light">FTLTALAML</h1>
+                        <p class="owned light">Owned by <span class="owner light">Edison</span></p>
+                        <div class="prince">
+                            <div class="current">
+                                <p class="currentPrince light">Current Prince</p>
+                                <p class="price light">2.1400 ETH</p>
+                            </div>
+                            <!-- <div class="listen">
+                                <p class="listenPrince light">Lestening Prince</p>
+                                <p class="price light">1.9253 ETH</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="buyNftBtn">
+                        <button type="input" class="mainBtn light">BUY NFT</button>
+                        <button type="input" class="secondBtn light">MAKE OFFER</button>
+                    </div> 
+                </div>
             </div>
-            <div class="type">
-                <p class="p light">BASE</p>
-                <p class="p light">NORMAL</p>
-                <p class="p light">(93.20%)</p>
-            </div>
-            <div class="type">
-                <p class="p light">BALL</p>
-                <p class="p light">NORMAL</p>
-                <p class="p light">(9.98%)</p>
-            </div>
-            <div class="type">
-                <p class="p light">WORLD</p>
-                <p class="p light">DUMBFOUNDED</p>
-                <p class="p light">(6.20%)</p>
-            </div>
-            <div class="type">
-                <p class="p light">PROP</p>
-                <p class="p light">NONE</p>
-                <p class="p light">(51.19%)</p>
-            </div>
-            <div class="type">
-                <p class="p light">TEXT</p>
-                <p class="p light">FANCY</p>
-                <p class="p light">(1.90%)</p>
-            </div>
-            <div class="type">
-                <p class="p light">COLOR</p>
-                <p class="p light">BLUE</p>
-                <p class="p light">(31.27%)</p>
-            </div>
-        </div> -->
-        <div class="nftBuyImg">
-            <img class="img light" src="img/NFT/FTLTALAML/FTLTALAML_1.png" alt="">
-        </div>
-        <div class="nftBuyDiscript">
-            <div class="discriptContent">
-                <h1 class="h1 light">FTLTALAML</h1>
-                <p class="owned light">Owned by <span class="owner light">Edison</span></p>
-                <p class="currentPrince light">Current Prince</p>
-                <p class="price light">2.14 ETH</p>
-                <div class="buyNftBtn">
-                <button type="input" class="mainBtn light">Buy NFT</button>
-                <button type="input" class="secondBtn light">Make Offer</button>
-            </div> 
-            </div>
-        </div>
-        
 
+            <div class="nftSubContent">
+                <div class="nftLeftContent">
+                    <div class="nftProperties light">
+                        <div class="properties">
+                            <h3 class="h3 light">Properties</h3>
+                            <div class="type">
+                                <p class="p light">BACKGROUND</p>
+                                <p class="p light">AQUA BLUE</p>
+                                <p class="p light">(9.98%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">BASE</p>
+                                <p class="p light">NORMAL</p>
+                                <p class="p light">(93.20%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">BALL</p>
+                                <p class="p light">NORMAL</p>
+                                <p class="p light">(9.98%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">WORLD</p>
+                                <p class="p light">DUMBFOUNDED</p>
+                                <p class="p light">(6.20%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">PROP</p>
+                                <p class="p light">NONE</p>
+                                <p class="p light">(51.19%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">TEXT</p>
+                                <p class="p light">FANCY</p>
+                                <p class="p light">(1.90%)</p>
+                            </div>
+                            <div class="type">
+                                <p class="p light">COLOR</p>
+                                <p class="p light">BLUE</p>
+                                <p class="p light">(31.27%)</p>
+                            </div>
+                        </div>    
+                    </div>
+
+                    <div class="nftBuyInfo light">
+                        <div class="buyInfo">
+                            <h3 class="h3 light">About FTLTALAML</h3>
+                            <div class="infoText">
+                                <p class="p light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus asperiores soluta non. Fugiat ipsam pariatur, earum amet sit velit doloribus numquam explicabo perferendis magnam libero est distinctio similique repudiandae autem!</p>
+                                <p class="p light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi adipisci quasi numquam magni sunt dolor nobis ex aliquid enim ad ab, tempora delectus laboriosam ut aperiam, cum consequatur! Vero nemo vel fuga aspernatur a excepturi laborum, tenetur officiis unde repudiandae aperiam culpa debitis quibusdam modi in voluptate necessitatibus, qui obcaecati.</p>
+                            </div>
+                            
+                        </div>    
+                    </div>
+
+                </div>
+    
+                <div class="nftListings light">
+                    <div class="listings">
+                        <h3 class="h3 light">Top Listings</h3>
+    
+                        <div class="column light">
+                            <p class="collection">Collection</p>
+                            <p class="volume">Price</p>
+                            <p class="columnFrom">From</p>
+                        </div>
+    
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_7.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div> 
+
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_8.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div> 
+                        
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_9.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div>  
+
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_10.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div>  
+
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_11.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div>  
+
+                        <div class="list light">
+                            <!-- <p class="num">1</p> -->
+                            <img class="topImg" src="img/NFT/FTLTALAML/FTLTALAML_12.png" alt="">
+                            <p class="topName light">FTLTALAML</p>
+                            <p class="topPrice light">2.345 ETH</p>
+                            <p class="from light">0x19371u8418989h87981</p>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
+   
+<!--     <div class="buyNftTitle">
+        <h2 class="h2 light">Collection</h2>
+    </div> -->
 
+    <!-- More from -->
     <div class="moreFromThis">
         <h2 class="h2 light">More from this collection</h2>
         <div class="content light">
@@ -318,9 +422,9 @@
         </div>
     </div>
 
-    <!-- ===================================footer======================================= -->
-
-    <div class="footer light">
+    <!-- ===================================section_9======================================= -->
+    
+    <div class="section_9 light">
         <div class="wrapper_9">
             <img class="logo" src="img/Logo.svg" alt="">
             <div class="list">
@@ -335,20 +439,23 @@
                         <li>Litepaper</li>
                     </ul>
                 </div>
-                <div class="help">
+                
+                <div class="developers">
                     <ul>
-                        <li>Customer Support</li>
-                        <li>Troubleshooting</li>
-                        <li>Guides</li>
-                    </ul>
-                </div>
-                <div class="Company">
-                    <ul>
+                        <li>Developers</li>
                         <li>Github</li>
                         <li>Documentation</li>
                         <li>Bug Bounty</li>
                         <li>Audits</li>
                         <li>Careers</li>
+                    </ul>
+                </div>
+
+                <div class="help">
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Troubleshooting</li>
+                        <li>Guides</li>
                     </ul>
                 </div>
             </div>
@@ -385,6 +492,130 @@
     <div class="tibame">
         <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。</p>
         <p>參考資源：PancakeSwup, templatemonster</p>
+    </div>
+
+    <!-- ===================================Footer======================================= -->
+
+    <footer>
+        <div class="section_10 light">
+            <ul>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <a fref="#">
+                            <label class="iconStyle light">
+                                <span class="material-icons">currency_exchange</span>
+                                <p>Trade</p>
+                            </label>
+                        </a>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <a href="farm.html">
+                            <label class="iconStyle light">
+                                <span class="material-icons">generating_tokens</span>
+                                <p>Earn</p>
+                            </label>
+                        </a>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <a href="#">
+                            <label class="iconStyle light">
+                                <span class="material-icons active">category</span>
+                                <p class="p active">NFT</p>
+                            </label>
+                        </a>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <a href="#">
+                            <label class="iconStyle light">
+                                <span class="material-icons">emoji_events</span>
+                                <p>Win</p>
+                            </label>
+                        </a>
+                    </button> 
+                </li>
+                <li>
+                    <button type="button" class="phoneMenu light">
+                        <a href="#">
+                            <label class="iconStyle light">
+                                <span class="material-icons">more_horiz</span>
+                                <p>More</p>
+                            </label>
+                        </a>
+                    </button> 
+                </li>
+            </ul>
+        </div>
+    </footer>    
+
+    <!-- ===================================dialog======================================= -->
+
+
+    <div id="lightbox" class="none">
+        <div class="dialog">
+            <div class="dialogContent light">
+                <div class="connectWallet light">
+                    <h2 class="h2 light">Connect Wallet</h2>
+                    <p class="p light">Start by connecting with one of the wallets below. Be sure to store your private keys or seed phrase securely. Never share them with anyone.</p>
+                    <div class="wallets">
+                        <ul>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/MetaMask.png" alt="">
+                                    <p class="p light">Metamask</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Binance.png" alt="">
+                                    <p class="p light">Binance</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/TP.png" alt="">
+                                    <p class="p light">Token&nbsp;Pocket</p>
+                                </div>
+                            </li>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Phantom.png" alt="">
+                                    <p class="p light">Phantom</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <img src="img/wallets/Blocto.png" alt="">
+                                    <p class="p light">Blocto</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="wallet">
+                                    <div class="moreWallet light"></div>
+                                    <p class="p light">More</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="learnConnect">
+                    <h2 class="h2 light">Haven’t got a wallet yet?</h2>
+                    <div class="walletImg">
+                        <!-- <img src="img/wallet.png" alt=""> -->
+                    </div>
+                    <button type="button" class="learnConnectBtn light">Learn How to Connect</button>
+                </div> 
+            </div>
+        </div>
+        <!-- <button id="close">close</button> -->
+        <!--  <button type="button" class="btn_modal_close">關閉</button> -->
+
     </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>

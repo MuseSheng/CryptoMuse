@@ -60,6 +60,37 @@
         grid-gap: 10px;
     }
 
+
+    /* Buy NFT */
+    .nftBuyImg{
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftLeftContent{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listings .column .columnFrom{
+        width: 80px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 80px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    
+
 }
 
 /* ----------------------- 1020 ----------------------- */
@@ -197,6 +228,34 @@
         margin-right: 5vw;
     }
 
+    /* Buy NFT */
+    .nftBuyImg{
+        width: 340px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftLeftContent{
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listings .column .columnFrom{
+        width: 80px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 80px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
 }
 
 
@@ -298,6 +357,99 @@
 
     .wrapperEarn .card{
         width: 95%;
+    }
+
+    /* Buy NFT */
+    .nftBuyImg{
+        width: 320px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftLeftContent{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nftBuyDiscript h1{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .owned{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 60px;
+    }
+
+    .nftBuyDiscript .currentPrince{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nftBuyDiscript .price{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .buyNftBtn .mainBtn{
+        width: 160px;
+        height: 46px;
+        border: 0;
+        line-height: 46px;
+        background: #5EC4D1;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .listings .column .columnFrom{
+        width: 80px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 80px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .properties .type p{
+        font-size: 14px;
+    }
+
+    .listings .list .topImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px
+    }
+    
+    .listings .list{
+        font-size: 14px;
+    }
+
+    .listings .list .topName{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
     }
 
 }
@@ -513,6 +665,105 @@
         margin-right: 50px;
     }
 
+
+
+    /* Buy NFT */
+    .nftBuyImg{
+        width: 280px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftLeftContent{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nftBuyDiscript h1{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 24px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .owned{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .nftBuyDiscript .currentPrince{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nftBuyDiscript .price{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .buyNftBtn .mainBtn{
+        width: 160px;
+        height: 46px;
+        border: 0;
+        line-height: 46px;
+        background: #5EC4D1;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .listings .column .columnFrom{
+        width: 80px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 80px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .properties .type p{
+        font-size: 14px;
+    }
+
+    .listings .list .topImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px
+    }
+    
+    .listings .list{
+        font-size: 14px;
+    }
+
+    .listings .list .topName{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .nftBuyInfo{
+        height: 320px;
+    }
+
 }
 
 /* ----------------------- 780 ----------------------- */
@@ -616,6 +867,159 @@
     .nftDiscript p{
         display: block;
         width: 100%;
+    }
+
+
+    /* Buy NFT */
+
+    .nftBuy{
+        padding: 10px;
+    }
+
+    .nftBuyImg{
+        width: 230px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftSubContent{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .nftLeftContent{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nftProperties{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .nftBuyDiscript h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .owned{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .currentPrince{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nftBuyDiscript .price{
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 18px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .buyNftBtn .mainBtn{
+        width: 140px;
+        height: 42px;
+        border: 0;
+        line-height: 42px;
+        background: #5EC4D1;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .buyNftBtn .secondBtn{
+        width: 130px;
+        height: 42px; /* border, so top & botton - 4px */
+        font-weight: 600;
+        font-size: 16px;
+        color: #5EC4D1;
+        border: 2px solid #5EC4D1;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .listings .column .columnFrom{
+        width: 200px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 200px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .properties .type p{
+        font-size: 14px;
+    }
+
+    .listings .list .topImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px
+    }
+    
+    .listings .list{
+        font-size: 14px;
+    }
+
+    .listings .list .topName{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .nftBuyInfo{
+        width: 40%;
+        height: 278px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+
+    .nftListings{
+        width: 100%;
+        flex-grow: 1;
+        margin: 0 auto;
+        margin-left: 0px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
     }
 
 
@@ -1166,6 +1570,159 @@
     .connectWallet .wallets li{
         flex-grow: 0;
         margin: 10px 0 0;
+    }
+
+    /* Buy NFT */
+
+    .nftBuy{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .nftBuyImg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftSubContent{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .nftLeftContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nftProperties{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .nftBuyDiscript h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .owned{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .currentPrince{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nftBuyDiscript .price{
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 18px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+
+    .buyNftBtn .mainBtn{
+        width: 180px;
+        height: 42px;
+        border: 0;
+        line-height: 42px;
+        background: #5EC4D1;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+
+    .buyNftBtn .secondBtn{
+        width: 150px;
+        height: 42px; /* border, so top & botton - 4px */
+        font-weight: 600;
+        font-size: 16px;
+        color: #5EC4D1;
+        border: 2px solid #5EC4D1;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .listings .column .columnFrom{
+        width: 200px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 200px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .properties .type p{
+        font-size: 14px;
+    }
+
+    .listings .list .topImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px
+    }
+    
+    .listings .list{
+        font-size: 14px;
+    }
+
+    .listings .list .topName{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .nftBuyInfo{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+
+    .nftListings{
+        width: 100%;
+        flex-grow: 1;
+        margin: 0 auto;
+        margin-left: 0px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
     }
 
 }
@@ -1863,6 +2420,164 @@
         margin: 0 auto;
         flex-direction: row;
         margin-top: 110px;
+    }
+
+
+    /* Buy NFT */
+
+    .nftBuy{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .nftBuyImg{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .nftSubContent{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .nftLeftContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nftProperties{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .nftBuyDiscript{
+        padding: 5px;
+    }
+
+    .nftBuyDiscript h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .owned{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .nftBuyDiscript .currentPrince{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nftBuyDiscript .price{
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 18px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+
+    .buyNftBtn .mainBtn{
+        width: 160px;
+        height: 42px;
+        border: 0;
+        line-height: 42px;
+        background: #5EC4D1;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    .buyNftBtn .secondBtn{
+        width: 140px;
+        height: 42px; /* border, so top & botton - 4px */
+        font-weight: 600;
+        font-size: 16px;
+        color: #5EC4D1;
+        border: 2px solid #5EC4D1;
+        background: rgba(0, 0, 0, 0);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .listings .column .columnFrom{
+        width: 60px;
+        text-align: right;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .listings .list .from{
+        width: 60px;
+        margin-left: 20px;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .properties .type p{
+        font-size: 14px;
+    }
+
+    .listings .list .topImg{
+        width: 60px;
+        height: 60px;
+        border-radius: 10px
+    }
+    
+    .listings .list{
+        font-size: 14px;
+    }
+
+    .listings .list .topName{
+        flex-grow: 1;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .nftBuyInfo{
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    }
+
+    .nftListings{
+        width: 100%;
+        flex-grow: 1;
+        margin: 0 auto;
+        margin-left: 0px;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 0px;
     }
 
 }
