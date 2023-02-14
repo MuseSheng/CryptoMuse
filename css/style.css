@@ -10,7 +10,6 @@ body{
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: url("../img/metamaskWallet.png");
 }
 
 body.light{
