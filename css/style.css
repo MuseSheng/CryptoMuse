@@ -119,6 +119,7 @@ header{
 	position: absolute;
 	top: 12px;
 	right: 30px;
+	display: block;
 }
 
 .connectBtn.light{
@@ -1496,8 +1497,20 @@ h3.dark{
 
 .connectWallet .wallets li{
 	flex-grow: 1;
+	border-radius: 10px;
 	margin: 10px 0;
+	padding: 10px 0 0;
+	box-sizing: border-box;
 }
+
+.connectWallet.light .wallets li:hover{
+	background-color: #E6E3EA;
+}
+
+.connectWallet.dark .wallets li:hover{
+	background-color: #353546;
+}
+
 
 .wallets .wallet{
 	width: 100px;
@@ -1505,6 +1518,7 @@ h3.dark{
 	position: relative;
 	text-align: center;
 	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .wallets .wallet p{
@@ -3116,15 +3130,6 @@ li:visited{
 	text-overflow: ellipsis;
 }
 
-
-
-
-
-
-/* ------------trade------------- */
-
-
-
 /* ------------Footer------------- */
 
 footer{
@@ -3212,8 +3217,201 @@ footer{
 	display: block;
 }
 
+/* ------------trade------------- */
 
-/* ------------a------------- */
+
+/* .connectBtn.light{
+	color: #FFFFFF;
+	transition: all .6s;
+}
+
+.connectBtn.dark{
+	color: #191326;
+	transition: all .6s;
+}
+ */
+
+
+/* wallet box */
+.walletBtn-box {
+	width: 200px;
+	height: 46px;
+	border: 0;
+	position: absolute;
+	top: 12px;
+	right: 30px;
+	display: none;
+	margin: 0 auto;
+	font-size: 18px;
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.walletBtn-box.light{
+	background: #FFE0B2;
+	background: linear-gradient(35.98deg, rgba(255, 224, 178, 0.7) 10.29%, rgba(219, 87, 156, 0.7) 36.39%, rgba(156, 39, 176, 0.7) 64.52%, rgba(255, 152, 0, 0.7) 98.93%);
+	background-size: 200% 200%;
+	border-radius: 20px;
+	transition: ease-in all .5s;
+	animation: wallet-box infinite alternate 5s;
+	transition: all .6;
+}
+
+
+.walletBtn-box.dark{
+  	background: rgb(85,0,255);
+  	background: linear-gradient(90deg, rgba(85,0,255,1) 35%, rgba(214,0,255,1) 100%);
+	background-size: 200% 200%;
+	border-radius: 20px;
+	transition: ease-in all .5s;
+	animation: wallet-box infinite alternate 5s;
+	transition: all .6;
+}
+
+.walletBtn-box:hover{
+	cursor: pointer;
+}
+  
+@keyframes wallet-box{
+	0%{		
+		background-position: 0% 50%;
+	}
+	100%{
+		background-position: 100% 70%;
+  	}
+}
+
+.walletBtn-box_address{
+	position: relative;
+	/* box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); */
+	cursor: pointer;
+	outline: none;
+	display: flex;
+}
+
+.walletBtn-box_address:focus + .walletMenu_list {
+	opacity: 1;
+	-webkit-animation-name: none;
+			animation-name: none;
+}
+
+.walletBtn-box_address:focus + .walletMenu_list .walletMenu {
+	cursor: pointer;
+}
+
+.walletBtn-box_address:focus .walletBtn-box_icon {
+	transform: translateY(-50%) rotate(180deg);
+}
+ 
+.walletBtn-box_address .walletBtn-box_icon{
+	position: absolute;
+	top: 50%;
+	left: auto;
+	right: 10px;
+	transform: translateY(-50%);
+	width: 30px;
+	transition: 0.2s ease;
+}
+
+.walletBtn-box-text{
+	width: 75%;
+	margin: 0;
+	padding: 0 15px;
+	color: #ffffff;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 46px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+}
+
+.walletMenu_list{
+	margin-top: 20px;
+	position: absolute;
+	right: 0px;
+	width: 250px;
+	padding: 0;
+	border-radius: 20px;
+	overflow: hidden;
+	list-style: none;
+	opacity: 0;
+	-webkit-animation-name: HideList;
+			animation-name: HideList;
+	-webkit-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+	-webkit-animation-delay: 0.5s;
+			animation-delay: 0.5s;
+	-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+	-webkit-animation-timing-function: step-start;
+			animation-timing-function: step-start;
+	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+.walletMenu_list.light{
+	color: #786EA6;
+	background-color: #FFF;
+}
+
+.walletMenu_list.dark{
+	color: #B6ADCF;
+	background-color: #27262C;
+}
+
+.walletMenu_list.light li:last-child{
+	border-top: solid  1px  #E6E3EA;
+}
+
+.walletMenu_list.dark li:last-child{
+	border-top: solid 1px  #373240;
+}
+
+.walletMenu{
+	width: 100%;
+	display: block;
+	padding: 20px 30px;
+	text-align: left;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;
+	box-sizing: border-box;
+}
+  
+.walletMenu_list.light .walletMenu:hover{
+	background-color: #F0F4F5;
+}
+
+.walletMenu_list.dark .walletMenu:hover{
+	background-color: #353546;
+}
+  
+@-webkit-keyframes HideList {
+	from{
+		transform: scaleY(1);
+	}
+	to{
+		transform: scaleY(0);
+	}
+}
+  
+@keyframes HideList {
+	from{
+		transform: scaleY(1);
+	}
+	to{
+		transform: scaleY(0);
+	}
+}
+
+
+
+
+
+/* --------------a--------------- */
 
 a:link{
 	text-decoration: none;

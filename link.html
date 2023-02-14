@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CryptoMuse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" >
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rwd.css">
+    <script src="js/jquery-3.6.3.js"></script> 
+</head>
+<body id="body" class="light">
+    <!-- Header -->
+    <header>
+        <div class="toper light">
+            <a href="index.html"><img id="logo" src="img/Logo.svg" alt=""></a>
+            <div class="nav light">
+                <ul>
+                    <li><a class="a light" href="#">Trade</a></li>
+                    <li><a class="a light" href="farm.html">Earn</a></li>
+                    <li><a class="a light" href="nftMarketing.html">NFT</a></li>
+                    <li><a class="a light" href="#">Win</a></li>
+                    <li><a class="a light" href="#">Voting</a></li>
+                </ul>
+            </div>
+            <button type="button" id="switch" class="switch light">
+                <label class="mode" for="switch">
+                    <span id="switchIcon" class="material-icons">wb_sunny</span>
+                </label>
+            </button> 
+            <button id="connectBtnId" type="button" class="connectBtn light" onclick="connectMetaMask();">CONNECT WALLET</button>
+            <div class="walletBtn-box light">
+                <div class="walletBtn-box_address" tabindex="1">
+                    <p class="walletBtn-box-text">Cream</p>
+                    <img class="walletBtn-box_icon" src="img/arrow_icon.svg" alt="Arrow Icon"/>
+                
+                    <!-- <div class="walletBtn-box_icon light" alt="Arrow Icon">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </div> -->
+                    
+            </div>
+                <ul class="walletMenu_list light">
+                  <li>
+                    <label class="walletMenu" for="0" aria-hidden="aria-hidden">Wallet</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="1" aria-hidden="aria-hidden">Recent Transactions</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="2" aria-hidden="aria-hidden">Your NFTs</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="3" aria-hidden="aria-hidden">Your Profile</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="4" aria-hidden="aria-hidden" onclick="disconnect();">Disconnect</label>
+                  </li>
+                </ul>
+              </div>
+
+        </div>
+    </header>
+
+    <!-- ===================================subMenu======================================= -->
+
+    <div class="nftMenu light">
+        <ul>
+            <li><a class="back light" href="nftProduct_FTLTALAML.html">&#060; Back to FTLTALAML</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- =================================footer======================================= -->
+
+    <div class="footer light">
+        <div class="wrapper_9">
+            <img class="logo" src="img/Logo.svg" alt="">
+            <div class="list">
+                <div class="about">
+                    <!-- <p>About</p> -->
+                    <ul>
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Brand</li>
+                        <li>Blog</li>
+                        <li>Community</li>
+                        <li>Litepaper</li>
+                    </ul>
+                </div>
+                <div class="help">
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Troubleshooting</li>
+                        <li>Guides</li>
+                    </ul>
+                </div>
+                <div class="Company">
+                    <ul>
+                        <li>Github</li>
+                        <li>Documentation</li>
+                        <li>Bug Bounty</li>
+                        <li>Audits</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <ul>
+                    <li>
+                        <img src="img/socialMedia/Twitter.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Telegram.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Reddit.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/GitHub.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Discord.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Medium.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="img/socialMedia/Youtube.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+     <!-- ===================================tibame======================================= -->
+
+    <div class="tibame">
+        <p>本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。</p>
+        <p>參考資源：PancakeSwup, templatemonster</p>
+    </div>
+
+
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-chart-widget.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    
+    <script  src="js/script.js"></script>
+    <script src="js/metamask.js"></script>
+</body>
+</html>

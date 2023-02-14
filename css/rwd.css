@@ -334,6 +334,34 @@
         width: 128px;
     }
 
+    .walletBtn-box {
+        width: 128px;
+        height: 46px;
+        border: 0;
+        position: absolute;
+        top: 12px;
+        right: 30px;
+        display: none;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .walletBtn-box-text{
+        width: 65%;
+        margin: 0;
+        padding: 0 15px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 46px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+    }
+    
+
     /* farm */ /* Pool */
 
     .banner{
@@ -1067,6 +1095,33 @@
         right: 30px;
         font-size: 14px;
         top:9px
+    }
+
+    .walletBtn-box {
+        width: 128px;
+        height: 42px;
+        border: 0;
+        position: absolute;
+        top: 9px;
+        right: 30px;
+        display: none;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .walletBtn-box-text{
+        width: 65%;
+        margin: 0;
+        padding: 0 15px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 42px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
     }
 
     .switch{
@@ -1912,6 +1967,7 @@
 
     .buyNftBtn{
         justify-content: center;
+    }
 
     .buyNftBtn .mainBtn{
         width: 145px;
@@ -1969,6 +2025,33 @@
         right: 10px;
         font-size: 14px;
         top:9px
+    }
+
+    .walletBtn-box {
+        width: 100px;
+        height: 42px;
+        border: 0;
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        display: none;
+        margin: 0 auto;
+        font-size: 18px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    }
+    
+    .walletBtn-box-text{
+        width: 55%;
+        margin: 0;
+        padding: 0 15px;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 42px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
     }
 
     .switch{

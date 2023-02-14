@@ -22,11 +22,11 @@
             <a href="index.html"><img id="logo" src="img/Logo.svg" alt=""></a>
             <div class="nav light">
                 <ul>
-                    <li><a class="a light" href="#">Trade</a></li>
+                    <li><a class="a light" href="trade.html">Trade</a></li>
                     <li><a class="a light" href="farm.html">Earn</a></li>
                     <li><a class="a light" href="nftMarketing.html">NFT</a></li>
                     <li><a class="a light" href="#">Win</a></li>
-                    <li><a class="a light" href="#">Voting</a></li>
+                    <li><a class="a light" href="#">More</a></li>
                 </ul>
             </div>
             <button type="button" id="switch" class="switch light">
@@ -35,6 +35,32 @@
                 </label>
             </button> 
             <button id="connectBtnId" type="button" class="connectBtn light">CONNECT WALLET</button>
+            <div class="walletBtn-box light">
+                <div class="walletBtn-box_address" tabindex="1">
+                    <p class="walletBtn-box-text">Cream</p>
+                    <img class="walletBtn-box_icon" src="img/arrow_icon.svg" alt="Arrow Icon"/>
+                    <!-- <div class="walletBtn-box_icon light" alt="Arrow Icon">
+                        <span class="material-icons">keyboard_arrow_down</span>
+                    </div> -->          
+                </div>
+                <ul class="walletMenu_list light">
+                  <li>
+                    <label class="walletMenu" for="0" aria-hidden="aria-hidden">Wallet</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="1" aria-hidden="aria-hidden">Recent Transactions</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="2" aria-hidden="aria-hidden">Your NFTs</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="3" aria-hidden="aria-hidden">Your Profile</label>
+                  </li>
+                  <li>
+                    <label class="walletMenu" for="4" aria-hidden="aria-hidden" onclick="disconnect();">Disconnect</label>
+                  </li>
+                </ul>
+              </div>
         </div>
     </header>
 
@@ -510,7 +536,7 @@
                     <div class="wallets">
                         <ul>
                             <li>
-                                <div class="wallet">
+                                <div class="wallet" onclick="connectMetaMask();">
                                     <img src="img/wallets/MetaMask.png" alt="">
                                     <p class="p light">Metamask</p>
                                 </div>
@@ -565,6 +591,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
     <script  src="js/script.js"></script>
 </body>
 </html>
