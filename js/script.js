@@ -589,7 +589,7 @@ function connectMetaMask(){
 
         }else{
             $("div[class = 'learnConnect'] > h2").text("Metamask is not installed");
-            $(".walletImg").css("background-image", "url(../img/metamaskWallet.png)");
+            $(".walletImg").css("background-image", "url(../CryptoMuse/img/metamaskWallet.png)");
             $(".learnConnectBtn").attr({
                 onclick: "window.open('https://metamask.io/download/');"
             });
