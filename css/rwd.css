@@ -127,8 +127,6 @@
         padding-top: 20px;
     }
 
-
-
     /* Banner */
     .text h1{
         margin-left: 105px;
@@ -141,7 +139,6 @@
     .bannerImg img{
         margin-right: 105px;
     }
-
 
 }
 
@@ -315,8 +312,44 @@
 
     .bannerImg img{
         margin-right: 50px;
-    }  
+    } 
 
+    /* trade */
+    .containerChart{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .containerSwup{
+        width: 200px;
+        margin: 0 5px;
+        padding: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+    }
+
+    .swupCoin{
+        margin-top: 0px;
+    }
+
+    .swupCoin .connectBtn{
+        width: 100%;
+        height: 46px;
+        border: 0;
+        background-color: #5EC4D1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 0px;
+    }
+    
 }
 
 /* ----------------------- 900 ----------------------- */
@@ -801,6 +834,71 @@
         height: 320px;
     }
 
+    /* trade */
+    
+    .coinTitle{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 52px;
+    }
+    
+    .swupCoinLogo{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .containerSwup{
+        width: 200px;
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .containerChart{
+        width: 450px;
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .swupCoin{
+        margin-top: 0px;
+    }
+
+    .swupCoin .connectBtn{
+        width: 100%;
+        height: 46px;
+        border: 0;
+        background-color: #5EC4D1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .swupForm input{
+        outline: 0;
+        width: 100%;
+        height: 40px;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 500;
+        direction: rtl;
+    }
+
 }
 
 /* ----------------------- 780 ----------------------- */
@@ -1059,6 +1157,83 @@
         margin-bottom: 0px;
     }
 
+    /* trade */
+    .wrapperTrade{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: -320px;
+    }
+
+    .coinTitle{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 85px;
+    }    
+    .swupCoinLogo{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .containerSwup{
+        width: 200px;
+        margin: 0 5px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .containerChart{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .swupCoin{
+        margin-top: 0px;
+    }
+
+    .swupCoin .connectBtn{
+        width: 100%;
+        height: 46px;
+        border: 0;
+        background-color: #5EC4D1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 0px;
+    }
+
+    .swupForm input{
+        outline: 0;
+        width: 100%;
+        height: 40px;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 500;
+        direction: rtl;
+    }
+
+    .swupTools .material-icons{
+        font-size: 16px;
+        margin: 0 5px;
+        margin-bottom: 0px;
+    }
 
 }
 
@@ -1986,7 +2161,88 @@
         text-align: center;
     }
 
+    /* trade */
+    .wrapperTrade{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: -320px;
+    }
+
+    .coinTitle{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }    
+
+    .swupCoinLogo{
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
     
+    .containerSwup{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .containerChart{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 5px;
+    }
+
+    .swupCoin{
+        margin-top: 0px;
+    }
+
+    .swupCoin .connectBtn{
+        width: 100%;
+        height: 46px;
+        border: 0;
+        background-color: #5EC4D1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .swupForm input{
+        outline: 0;
+        width: 100%;
+        height: 40px;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 500;
+        direction: rtl;
+    }
+
+    .swupTools .material-icons{
+        font-size: 16px;
+        margin: 0 5px;
+        margin-bottom: 0px;
+    }
 
 }
 

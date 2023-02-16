@@ -1,32 +1,34 @@
-let ctx = document.getElementById('swupChart').getContext('2d');
-
 let gradient = ctx.createLinearGradient(0, 0, 0, 400);
     gradient.addColorStop(0, 'rgba(250,174,50,1)');   
     gradient.addColorStop(1, 'rgba(250,174,50,0.2)');
 
-let chart = new Chart(ctx, {
+const chartData = {
+  labels: [],
+  datasets:[
+    {			
+    label: 'Dogecoin (DOGE)',
+    data: [],
+    borderColor: 'rgba(247,147,26,1)',
+    backgroundColor: gradient,
+    //borderJoinStyle: 'round',
+    //borderCapStyle: 'round',
+    borderWidth: 3,
+    pointRadius: 0,
+    pointHitRadius: 10,
+    fill: true
+    }
+  ]
+};
+
+
+let ctx = document.getElementById('btcChartLight').getContext('2d');
+const myChart = new Chart(ctx, {
   
 	type: 'line',
-  	data: {
-    	labels: [],
-    	datasets:[
-    		{			
-				label: 'Dogecoin (DOGE)',
-				data: [],
-				borderColor: 'rgba(247,147,26,1)',
-				backgroundColor: gradient,
-				//borderJoinStyle: 'round',
-				//borderCapStyle: 'round',
-				borderWidth: 3,
-				pointRadius: 0,
-				pointHitRadius: 10,
-				fill: true
-			}
-		]
-	},
+  data: chartData,
   	options: {
 		title: {
-			display: false,
+			display: true,
 			family: "'Montserrat', 'sans-serif'",
 			text: 'Dogecoin',
 			fontSize: 28
@@ -77,10 +79,25 @@ let chart = new Chart(ctx, {
 			bodyFontSize: 18,
 			bodyFontColor: 'rgba(237, 234, 243, 1)' 
     	},
-		aspectRatio: 1.2,
+		aspectRatio: 1,
 		maintainAspectRatio: true
   	},
 });
+
+document.getElementById('chartChange').addEventListener('click', () => {
+  const toDarkMode = myBarChart.options.scales.x.grid.color === lightGridLineColor;
+  if (toDarkMode) {
+    myBarChart.options.scales.x.grid.color = darkGridLineColor;
+    myBarChart.options.scales.y.grid.color = darkGridLineColor;
+  } else {
+    myBarChart.options.scales.x.grid.color = lightGridLineColor;
+    myBarChart.options.scales.y.grid.color = lightGridLineColor;
+  }
+
+  myBarChart.update();
+});
+
+
 
 axios.get('https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_currency=usd&days=3')
 .then(function (response){

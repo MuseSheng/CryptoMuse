@@ -1281,6 +1281,7 @@ h3.dark{
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 	border-radius: 20px;
 	margin: 0 auto;
+	display: block;
 }
 
 /* .connectBtn.light{
@@ -3217,19 +3218,236 @@ footer{
 	display: block;
 }
 
-/* ------------trade------------- */
+/* --------------trade--------------- */
 
+.wrapperTrade{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: -320px;
+}
 
-/* .connectBtn.light{
-	color: #FFFFFF;
+.containerChart{
+	width: 600px;
+    display: flex;
+    justify-content: center;
+	margin: 0 5px;
+}
+
+.chartCard {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.coinTitle{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.swupCoinLogo{
+	width: 48px;
+	height: 48px;
+	background-image: url("../img/swup/Doge.png");
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.containerSwup{
+	width: 300px;
+	margin: 0 5px;
+	padding: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+
+.chartCard.light, .containerSwup.light{
+	background-color: #FFF;
 	transition: all .6s;
 }
 
-.connectBtn.dark{
-	color: #191326;
+.chartCard.dark, .containerSwup.dark{
+	background-color: #27262C;
 	transition: all .6s;
 }
- */
+
+.chart-container{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.containerSwup .swupHeader h1{
+	height: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.containerSwup .swupHeader h2{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.containerSwup .swupHeader .h2.light{
+	color: #786EA6;
+	transition: all .6s;
+}
+
+.containerSwup .swupHeader .h2.dark{
+	color: #B6ADCF;
+	transition: all .6s;
+}
+
+.swupTools{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.swupTools.light{
+	border-bottom: 1px solid #E6E3EA;
+	transition: all .6s;
+}
+
+.swupTools.dark{
+	border-bottom: 1px solid #373240;
+	transition: all .6s;
+}
+
+.swupTools .material-icons{
+	font-size: 20px;
+	margin: 0 5px;
+	margin-bottom: 10px;
+}
+
+.swupTools.light .material-icons{
+	color: #786EA6;
+	transition: all .6s;
+}
+
+.swupTools.dark .material-icons{
+	color: #B6ADCF;
+	transition: all .6s;
+}
+
+.swupTools .material-icons span{
+	color: #FF9800;
+}
+
+.swupCoin{
+	margin-top: 20px;
+}
+
+.coinSelect_1, .coinSelect_2{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.coinImg_1, .coinImg_2{
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	margin-right: 10px;
+}
+
+.coinImg_1{
+	background-image: url("../img/swup/doge.png");
+}
+
+.coinImg_2{
+	background-image: url("../img/swup/Tether.png");
+}
+
+.coinName_1, .coinName_2{
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 5px;
+}
+
+.exchange{
+	width: 42px;
+	height: 42px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px auto;
+	border-radius: 50px;
+}
+
+.exchange.light{
+	background: #EDEAF3;
+	transition: all .6;
+}
+
+.exchange.dark{
+	background: #362F45;
+	transition: all .6;
+}
+
+.exchange .material-icons{
+	color: #5EC4D1;
+}
+
+.swupForm input{
+	outline: 0;
+	width: 100%;
+	height: 50px;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px 30px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-weight: 500;
+	direction: rtl;
+}
+
+.swupInput.light{
+	background: #EDEAF3;
+	color: #786EA6;
+	transition: all .6;
+}
+
+.swupInput.dark{
+	background: #362F45;
+	color: #B6ADCF;
+	transition: all .6;
+}
+
+.swupCoin .connectBtn{
+	width: 80%;
+	height: 46px;
+	border: 0;
+	background-color: #5EC4D1;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 46px;
+	text-align: center;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 60px;
+}
+
+
+/* ------------trade end------------- */
 
 
 /* wallet box */

@@ -453,6 +453,7 @@ function mode(){
             y[i].classList.remove('dark');
             y[i].classList.add('light');
             document.getElementById("switchIcon").textContent="wb_sunny";
+
             light=1;
         }
     }
@@ -544,8 +545,10 @@ lightbox_el.querySelector(".dialog").addEventListener("click", function(e){
 
 
 /* Metamusk */
+//const MetaMaskOnboarding = require('@metamask/onboarding')
 
 let address;
+
 function connectMetaMask(){
 
     $(function(){
@@ -578,8 +581,19 @@ function connectMetaMask(){
             $(`#lightbox`).addClass("none")
             $(`body`).css("overflow", "auto")
 
+            /* Slide Connect text change */
+            $(".slideBtn > .connectBtn").text("GET IN TOUCH !");
+
+            /* disable section_8 connectWallet BTN */
+            $(".wrapper_8 > .connectBtn").css("display", "none");
+
+            /* Farm btn change */
+            $(`#lightbox`).addClass("none")
+            $(".action > .connectBtn").text("Enable Contract");
+
             /* Localstoragfe */
             localStorage.setItem('connect', 1);
+
          });
 
     }).catch((error) => {
@@ -645,46 +659,41 @@ function connectMetaMask(){
   }); */
 }
 
-/* function disconnect(){
-  awaitethereum.request({
-    method: "eth_requestAccounts", 
-    params: [
-      {
-        eth_accounts: {}
-      }
-    ]
-  });
-  console.log("disconnect");
-} */
 
 
-function login() {
+/* async function disconnect() {
+    try {
+      deactivate()
+      localStorage.setItem('isWalletConnected', false)
+    } catch (ex) {
+      console.log(ex)
+    }
+  } */
 
-    $("#btnLogin").attr("disabled", true);
-
+function login(){
+    console.log("1");
     // get nonce
     $.ajax({
+        
         type: "GET",
-        url: "/api/metamask/nonce/"+address,
+        url: "/api/metamask/nonce/" + address,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function(data){
 
-            $("#divaddr").append("<div class=\"alert alert-secondary\" role=\"alert\">第二步: Backend 取得 Nonce成功： <small>"+data.payload+"</small></div>");
-            //$("#divaddr").append("<div class=\"alert alert-secondary\" role=\"alert\">Hex Nonce (應該同 MetaMask 顯示一致)： <small>"+window.web3.utils.utf8ToHex(data.payload)+"</small></div>");
 
-            //var hexData = window.web3.utils.utf8ToHex(data.payload);
-            var hexData = data.payload;
+            let hexData = window.web3.utils.utf8ToHex(data.payload);
+            //var hexData = data.payload;
             //var hexData = "Hello welcome to frank.hk";
 
             console.log("payload", data.payload);
 
-            $("#btnLogin").html("等待 MetaMask 認證2 ");
+            /* $("#btnLogin").html("等待 MetaMask 認證2 "); */
             window.web3.eth.personal.sign(hexData, address, function(result, signature){
                 console.log(result);
                 console.log(signature);
-                $("#divaddr").append("<div class=\"alert alert-warning\" role=\"alert\">第三步: 取得 MetaMask 簽名： <small>"+signature+"</small></div>");
-
+/*                 $("#divaddr").append("<div class=\"alert alert-warning\" role=\"alert\">第三步: 取得 MetaMask 簽名： <small>"+signature+"</small></div>");
+ */
                 if (!result) {
                     $.ajax({
                         type: "POST",

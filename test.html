@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.3.js"></script>
+</head>
+<body>
+    
+    <script>
+
+        var settings = {
+            "url": "https://api.coingecko.com/api/v3/coins/dogecoin/market_chart?vs_currency=usd&days=5",
+            "method": "GET",
+            "timeout": 0,
+            "headers": {
+            "Cookie": "__cf_bm=Mrvc5UBvtpDpmJB4UxPHJzSPCxoNqizlUvd7htpkAVY-1676548764-0-AbinhZdfR39RfGnZ/yUWgEalYEaT4mRqJJ1F6ZdCSFa5/kWTWV6FlVNzi7IK9Dv3kfaDgvAsIM9HXs2UrQXzk5A="
+            },
+        };
+        
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    </script>
+</body>
+</html>
+

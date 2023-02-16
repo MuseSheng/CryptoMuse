@@ -81,15 +81,11 @@
 
         <div class="containerChart">
             <div class="chartCard light">
-				<div class="coinTitle">
-					<div class="swupCoinLogo"></div>
-					<h1>Dogecoin</h1>
-				</div>
 				<div class="chart-container">
-					<canvas id="swupChart"></canvas>
+					<canvas id="btcChartLight"></canvas>
 				</div>
 				
-                <!-- <bitcoin class="btc">
+               <!--  <bitcoin class="btc">
                     <card class="asset-info">
                         <div class="title">
                             <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/doge.svg" width="15%"> 
@@ -107,19 +103,20 @@
         
 		<!-- ===================================SwupContent======================================= -->
 		
-		<div class="containerSwup light">
+		<div class="containerSwup">
 			<div class="swupHeader light">
 				<h1>Swup</h1>
-				<h2 class="h2 light">Trade tokens in an instant</h2>
+				<h2>Trade tokens in an instant</h2>
 			</div>
 			<div class="swupTools light">
-				<span class="material-icons"><span>insights</span></span>
+				<span class="material-icons">insights</span>
 				<span class="material-icons">whatshot</span>
 				<span class="material-icons">settings</span>
 				<span class="material-icons">history</span>
 				<span class="material-icons">refresh</span>
 			</div>
 			<div class="swupCoin">
+
 				<form class="swupForm">
 					<div class="coinSelect_1">
 						<div class="coinImg_1"></div>
@@ -127,9 +124,9 @@
 						<span class="material-icons">keyboard_arrow_down</span>
 					</div>
 
-					<input class="swupInput light" type="text" placeholder="0.0"/>
+					<input type="text" placeholder="0.0"/>
 				
-					<div class="exchange light">
+					<div class="exchange">
 						<span class="material-icons">cached</span>
 					</div>
 				
@@ -139,9 +136,8 @@
 						<span class="material-icons">keyboard_arrow_down</span>
 					</div>
 
-					<input class="swupInput light" type="password" placeholder="0.0"/>
+					<input type="password" placeholder="0.0"/>
 				</form>
-				<button type="submit" class="connectBtn light">CONNECT WALLET</button>
 			</div>
         </div>
     </div>
@@ -350,6 +346,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/chart.js"></script>
+  <script src="js/chart2.js"></script>
 </body>
 </html>
