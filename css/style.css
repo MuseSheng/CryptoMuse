@@ -3297,7 +3297,7 @@ footer{
 	margin: 0 auto;
 }
 
-.containerSwup .swapHeader h1{
+.containerSwup .swupHeader h1{
 	height: 50px;
 	font-weight: 700;
 	font-size: 16px;
@@ -3306,18 +3306,18 @@ footer{
 	align-items: center;
 }
 
-.containerSwup .swapHeader h2{
+.containerSwup .swupHeader h2{
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 }
 
-.containerSwup .swapHeader .h2.light{
+.containerSwup .swupHeader .h2.light{
 	color: #786EA6;
 	transition: all .6s;
 }
 
-.containerSwup .swapHeader .h2.dark{
+.containerSwup .swupHeader .h2.dark{
 	color: #B6ADCF;
 	transition: all .6s;
 }
@@ -3476,6 +3476,7 @@ footer{
   	outline: none;
   	display: flex;
   	align-items: center;
+	background-color: #02C708;
 }
 
 .selectCoin_current:focus + .coinMenu_list {
@@ -3525,15 +3526,15 @@ footer{
 
 .coinMenu_list {
   position: absolute;
-  width: 80%;
+  width: 300px;
   height: 300px;
   overflow: scroll;
   padding: 0;
   list-style: none;
   opacity: 0;
   border-radius: 10px;
-  -webkit-animation-name: HideList;
-          animation-name: HideList;
+  -webkit-animation-name: HideCoinList;
+          animation-name: HideCoinList;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-delay: 0.5s;
@@ -3570,7 +3571,7 @@ footer{
 	background-color: #27262C;
   }
 
-@-webkit-keyframes HideList {
+@-webkit-keyframes HideCoinList {
   from {
     transform: scaleY(1);
   }
@@ -3579,7 +3580,7 @@ footer{
   }
 }
 
-@keyframes HideList {
+@keyframes HideCoinList {
   from {
     transform: scaleY(1);
   }
