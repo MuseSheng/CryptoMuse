@@ -43,24 +43,24 @@
                         <span class="material-icons">keyboard_arrow_down</span>
                     </div> -->          
                 </div>
-                <ul class="coinMenu_list light">
+                <ul class="walletMenu_list light">
                   <li>
-                    <label class="coinMenu" for="0" aria-hidden="aria-hidden">Wallet</label>
+                    <label class="walletMenu" for="0" aria-hidden="aria-hidden">Wallet</label>
                   </li>
                   <li>
-                    <label class="coinMenu" for="1" aria-hidden="aria-hidden">Recent Transactions</label>
+                    <label class="walletMenu" for="1" aria-hidden="aria-hidden">Recent Transactions</label>
                   </li>
                   <li>
-                    <label class="coinMenu" for="2" aria-hidden="aria-hidden">Your NFTs</label>
+                    <label class="walletMenu" for="2" aria-hidden="aria-hidden">Your NFTs</label>
                   </li>
                   <li>
-                    <label class="coinMenu" for="3" aria-hidden="aria-hidden">Your Profile</label>
+                    <label class="walletMenu" for="3" aria-hidden="aria-hidden">Your Profile</label>
                   </li>
                   <li>
-                    <label class="coinMenu" for="4" aria-hidden="aria-hidden" onclick="disconnect();">Disconnect</label>
+                    <label class="walletMenu" for="4" aria-hidden="aria-hidden" onclick="disconnect();">Disconnect</label>
                   </li>
                 </ul>
-            </div>
+              </div>
         </div>
     </header>
 
@@ -83,7 +83,7 @@
             <div class="chartCard light">
 				<div class="coinTitle">
 					<div class="swupCoinLogo"></div>
-					<h1>Bitcoin</h1>
+					<h1>Dogecoin</h1>
                     <div class="coinPrice">
                         <span class="material-icons">attach_money</span>
                         <div id="currentPrice" class="currentPrice"></div>
@@ -92,7 +92,20 @@
 				<div class="chart-container">
 					<canvas id="swupChart"></canvas>
 				</div>
-				        
+				
+                <!-- <bitcoin class="btc">
+                    <card class="asset-info">
+                        <div class="title">
+                            <img src="https://s3.us-east-2.amazonaws.com/nomics-api/static/images/currencies/doge.svg" width="15%"> 
+                            <h1>Dogecoin</h1>
+                        </div>
+                        <div class="details">
+                            <h2 class="asset-price" id="btcPrice"></h2>
+                        </div>
+                    </card>
+                    <canvas id="btcChart"></canvas>
+                </bitcoin> -->
+        
             </div>
         </div>
         
@@ -100,7 +113,7 @@
 		
 		<div class="containerSwup light">
 			<div class="swupHeader light">
-				<h1>Swap</h1>
+				<h1>Swup</h1>
 				<h2 class="h2 light">Trade tokens in an instant</h2>
 			</div>
 			<div class="swupTools light">
@@ -112,94 +125,11 @@
 			</div>
 			<div class="swupCoin">
 				<form class="swupForm">
-                    
-					<!-- <div class="coinSelect_1">
-					    <div class="coinImg_1"></div>
-						<div class="coinName_1">Bitcoin</div>
+					<div class="coinSelect_1">
+						<div class="coinImg_1"></div>
+						<div class="coinName_1">DOGE</div>
 						<span class="material-icons">keyboard_arrow_down</span>
-					</div> -->
-
-                    <div class="selectCoin light">
-                        <div id="selectCoin">
-                            <div class="selectCoin_current" tabindex="1">
-                                
-                                <!-- coin image -->
-                                <div class="coinImg_1"></div>
-
-                                <!-- coin name -->
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="0" value="1" name="Coin" checked="checked"/>
-                                    <p class="select-box__input-text">Bitcoin</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="1" value="2" name="Coin"/>
-                                    <p class="select-box__input-text">ETH</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="2" value="3" name="Coin"/>
-                                    <p class="select-box__input-text">Doge</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="3" value="4" name="Coin"/>
-                                    <p class="select-box__input-text">Solana</p>
-                                </div>    
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="4" value="5" name="Coin"/>
-                                    <p class="select-box__input-text">UNI</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="5" value="6" name="Coin"/>
-                                    <p class="select-box__input-text">BNB</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="6" value="7" name="Coin"/>
-                                    <p class="select-box__input-text">CAKE</p>
-                                </div>
-                                <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="7" value="8" name="Coin"/>
-                                    <p class="select-box__input-text">SHIB</p>
-                                </div>
-                                
-                                 <!-- coin arrow -->
-                                <div class="select-box__icon" alt="Arrow Icon" aria-hidden="true">
-                                    <span class="material-icons">keyboard_arrow_down</span>
-                                </div>
-                            
-                                
-                            </div>
-
-                            <ul class="coinMenu_list light">
-
-                                <li>
-                                    <label id="bitcoin" class="coinMenu_option light" for="0" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">Bitcoin</label>
-                                </li>
-                                <li>
-                                    <label id="ethereum" class="coinMenu_option light" for="1" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">ETH</label>
-                                </li>
-                                <li>
-                                    <label id="dogecoin" class="coinMenu_option light" for="2" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">Doge</label>
-                                </li>
-                                <li>
-                                    <label id="solana" class="coinMenu_option light" for="3" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">Solana</label>
-                                </li>
-                                <li>
-                                    <label id="uniswap" class="coinMenu_option light" for="4" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">UNI</label>
-                                </li>
-                                <li>
-                                    <label id="binancecoin" class="coinMenu_option light" for="5" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">BNB</label>
-                                </li>
-                                <li>
-                                    <label id="pancakeswap-token" class="coinMenu_option" for="6" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">CAKE</label>
-                                </li>
-                                <li>
-                                    <label id="shiba-inu" class="coinMenu_option" for="7" aria-hidden="aria-hidden" name="Coin" onclick="getCoin()">SHIB</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> 
-
-
-
+					</div>
 
 					<input class="swupInput light" type="text" placeholder="0.0"/>
 				
@@ -207,7 +137,7 @@
 						<span class="material-icons">cached</span>
 					</div>
 				
-					<div class="selectCoin light">
+					<div class="coinSelect_2">
 						<div class="coinImg_2"></div>
 						<div class="coinName_2">USDT</div>
 						<span class="material-icons">keyboard_arrow_down</span>
