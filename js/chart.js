@@ -97,8 +97,8 @@ function getCoin(){
 	$(".coinTitle > h1").text(newText);
 
 	//let metamaskImgUrl = "CryptoMuse/img/metamaskWallet.png";
-    $(".swupCoinLogo").css("background-image", `url(../img/swup/${newText}.png)`);
-	$(".coinImg_1").css("background-image", `url(../img/swup/${newText}.png)`);
+    $(".swupCoinLogo").css("background-image", `url(../CryptoMuse/img/swup/${newText}.png)`);
+	$(".coinImg_1").css("background-image", `url(../CryptoMuse/img/swup/${newText}.png)`);
 
 
     // Select Coin ID price
