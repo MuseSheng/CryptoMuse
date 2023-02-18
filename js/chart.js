@@ -1,4 +1,4 @@
-let ctx = document.getElementById('swupChart').getContext('2d');
+let ctx = document.getElementById('swapChart').getContext('2d');
 
 let gradient = ctx.createLinearGradient(0, 0, 0, 400);
     gradient.addColorStop(0, 'rgba(250,174,50,1)');   
@@ -97,8 +97,8 @@ function getCoin(){
 	$(".coinTitle > h1").text(newText);
 
 	//let metamaskImgUrl = "CryptoMuse/img/metamaskWallet.png";
-    $(".swupCoinLogo").css("background-image", `url(../CryptoMuse/img/swup/${newText}.png)`);
-	$(".coinImg_1").css("background-image", `url(../CryptoMuse/img/swup/${newText}.png)`);
+    $(".swapCoinLogo").css("background-image", `url(../CryptoMuse/img/swap/${newText}.png)`);
+	$(".coinImg_1").css("background-image", `url(../CryptoMuse/img/swap/${newText}.png)`);
 
 
     // Select Coin ID price

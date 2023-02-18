@@ -3256,10 +3256,10 @@ footer{
 	margin-bottom: 20px;
 }
 
-.swupCoinLogo{
+.swapCoinLogo{
 	width: 48px;
 	height: 48px;
-	background-image: url("../img/swup/Bitcoin.png");
+	background-image: url("../img/swap/Bitcoin.png");
 	background-size: cover;
 	margin-right: 10px;
 }
@@ -3273,7 +3273,7 @@ footer{
 	font-weight: 600;
 }
 
-.containerSwup{
+.containerSwap{
 	width: 300px;
 	margin: 0 5px;
 	padding: 20px;
@@ -3281,12 +3281,12 @@ footer{
 	border-radius: 20px;
 }
 
-.chartCard.light, .containerSwup.light{
+.chartCard.light, .containerSwap.light{
 	background-color: #FFF;
 	transition: all .6s;
 }
 
-.chartCard.dark, .containerSwup.dark{
+.chartCard.dark, .containerSwap.dark{
 	background-color: #27262C;
 	transition: all .6s;
 }
@@ -3297,7 +3297,7 @@ footer{
 	margin: 0 auto;
 }
 
-.containerSwup .swupHeader h1{
+.containerSwap .swapHeader h1{
 	height: 50px;
 	font-weight: 700;
 	font-size: 16px;
@@ -3306,58 +3306,58 @@ footer{
 	align-items: center;
 }
 
-.containerSwup .swupHeader h2{
+.containerSwap .swapHeader h2{
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 }
 
-.containerSwup .swupHeader .h2.light{
+.containerSwap .swapHeader .h2.light{
 	color: #786EA6;
 	transition: all .6s;
 }
 
-.containerSwup .swupHeader .h2.dark{
+.containerSwap .swapHeader .h2.dark{
 	color: #B6ADCF;
 	transition: all .6s;
 }
 
-.swupTools{
+.swapTools{
 	display: flex;
 	justify-content: flex-end;
 }
 
-.swupTools.light{
+.swapTools.light{
 	border-bottom: 1px solid #E6E3EA;
 	transition: all .6s;
 }
 
-.swupTools.dark{
+.swapTools.dark{
 	border-bottom: 1px solid #373240;
 	transition: all .6s;
 }
 
-.swupTools .material-icons{
+.swapTools .material-icons{
 	font-size: 20px;
 	margin: 0 5px;
 	margin-bottom: 10px;
 }
 
-.swupTools.light .material-icons{
+.swapTools.light .material-icons{
 	color: #786EA6;
 	transition: all .6s;
 }
 
-.swupTools.dark .material-icons{
+.swapTools.dark .material-icons{
 	color: #B6ADCF;
 	transition: all .6s;
 }
 
-.swupTools .material-icons span{
+.swapTools .material-icons span{
 	color: #FF9800;
 }
 
-.swupCoin{
+.swapCoin{
 	margin-top: 20px;
 }
 
@@ -3369,11 +3369,11 @@ footer{
 }
 
 .coinImg_1{
-	background-image: url("../img/swup/Bitcoin.png");
+	background-image: url("../img/swap/Bitcoin.png");
 }
 
 .coinImg_2{
-	background-image: url("../img/swup/Tether.png");
+	background-image: url("../img/swap/Tether.png");
 }
 
 .exchange{
@@ -3400,7 +3400,7 @@ footer{
 	color: #5EC4D1;
 }
 
-.swupForm input{
+.swapForm input{
 	outline: 0;
 	width: 100%;
 	height: 50px;
@@ -3414,19 +3414,19 @@ footer{
 	direction: rtl;
 }
 
-.swupInput.light{
+.swapInput.light{
 	background: #EDEAF3;
 	color: #786EA6;
 	transition: all .6;
 }
 
-.swupInput.dark{
+.swapInput.dark{
 	background: #362F45;
 	color: #B6ADCF;
 	transition: all .6;
 }
 
-.swupCoin .connectBtn{
+.swapCoin .connectBtn{
 	width: 80%;
 	height: 46px;
 	border: 0;
@@ -3476,13 +3476,12 @@ footer{
   	outline: none;
   	display: flex;
   	align-items: center;
-	background-color: #02C708;
 }
 
 .selectCoin_current:focus + .coinMenu_list {
   opacity: 1;
-  -webkit-animation-name: none;
-          animation-name: none;
+  -webkit-animation-name: coin_select;
+          animation-name: coin_select;
 }
 
 .selectCoin_current:focus + .coinMenu_list .coinMenu_option {
@@ -3513,15 +3512,15 @@ footer{
 }
 
 .select-box__input {
-  display: none;
+	display: none;
 }
 
 .select-box__input:checked + .select-box__input-text {
-  display: block;
+	display: block;
 }
 
 .select-box__input-text {
-  display: none;
+	display: none;
 }
 
 .coinMenu_list {

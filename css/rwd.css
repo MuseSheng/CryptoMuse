@@ -87,6 +87,11 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+
+    /* trade */
+    .coinMenu_list{
+        width: 260px;
+    }
     
 }
 
@@ -135,6 +140,11 @@
 
     .bannerImg img{
         margin-right: 105px;
+    }
+
+    /* trade */
+    .coinMenu_list{
+        width: 240px;
     }
 
 }
@@ -250,6 +260,11 @@
         text-overflow: ellipsis;
     }
 
+    /* trade */
+    .coinMenu_list{
+        width: 200px;
+    }
+
 }
 
 
@@ -319,7 +334,7 @@
         margin: 0 5px;
     }
 
-    .containerSwup{
+    .containerSwap{
         width: 200px;
         margin: 0 5px;
         padding: 20px;
@@ -327,11 +342,11 @@
         border-radius: 20px;
     }
 
-    .swupCoin{
+    .swapCoin{
         margin-top: 0px;
     }
 
-    .swupCoin .connectBtn{
+    .swapCoin .connectBtn{
         width: 100%;
         height: 46px;
         border: 0;
@@ -517,6 +532,11 @@
     .properties .type p:last-child.dark{
         width: 58px;
         margin-right: 0px;
+    }
+
+    /* trade */
+    .coinMenu_list{
+        width: 180px;
     }
 
 }
@@ -842,13 +862,13 @@
         margin-bottom: 52px;
     }
     
-    .swupCoinLogo{
+    .swapCoinLogo{
         width: 40px;
         height: 40px;
         margin-right: 10px;
     }
     
-    .containerSwup{
+    .containerSwap{
         width: 200px;
         margin: 0 5px;
         padding: 10px;
@@ -862,11 +882,11 @@
         margin: 0 5px;
     }
 
-    .swupCoin{
+    .swapCoin{
         margin-top: 0px;
     }
 
-    .swupCoin .connectBtn{
+    .swapCoin .connectBtn{
         width: 100%;
         height: 46px;
         border: 0;
@@ -882,7 +902,7 @@
         margin-top: 0px;
     }
 
-    .swupForm input{
+    .swapForm input{
         outline: 0;
         width: 100%;
         height: 40px;
@@ -894,6 +914,11 @@
         font-size: 16px;
         font-weight: 500;
         direction: rtl;
+    }
+
+    /* trade */
+    .coinMenu_list{
+        width: 198px;
     }
 
 }
@@ -1172,13 +1197,13 @@
         margin: 0 auto;
         margin-bottom: 85px;
     }    
-    .swupCoinLogo{
+    .swapCoinLogo{
         width: 40px;
         height: 40px;
         margin-right: 10px;
     }
     
-    .containerSwup{
+    .containerSwap{
         width: 200px;
         margin: 0 5px;
         padding: 10px;
@@ -1192,11 +1217,11 @@
         margin: 0 5px;
     }
 
-    .swupCoin{
+    .swapCoin{
         margin-top: 0px;
     }
 
-    .swupCoin .connectBtn{
+    .swapCoin .connectBtn{
         width: 100%;
         height: 46px;
         border: 0;
@@ -1212,7 +1237,7 @@
         margin-top: 0px;
     }
 
-    .swupForm input{
+    .swapForm input{
         outline: 0;
         width: 100%;
         height: 40px;
@@ -1226,7 +1251,7 @@
         direction: rtl;
     }
 
-    .swupTools .material-icons{
+    .swapTools .material-icons{
         font-size: 16px;
         margin: 0 5px;
         margin-bottom: 0px;
@@ -1785,6 +1810,11 @@
         margin-right: 0px;
     }
 
+    /* trade */
+    .coinMenu_list{
+        width: 140px;
+    }
+
 }
 
 /* ----------------------- 580 ----------------------- */
@@ -1979,6 +2009,11 @@
     .properties .type p:last-child.dark{
         width: 68px;
         margin-right: 0px;
+    }
+
+    /* trade */
+    .coinMenu_list{
+        width: 140px;
     }
 
 }
@@ -2178,13 +2213,13 @@
         margin-bottom: 20px;
     }    
 
-    .swupCoinLogo{
+    .swapCoinLogo{
         width: 40px;
         height: 40px;
         margin-right: 10px;
     }
     
-    .containerSwup{
+    .containerSwap{
         width: 100%;
         margin: 0 auto;
         padding: 20px;
@@ -2200,11 +2235,11 @@
         margin: 0 5px;
     }
 
-    .swupCoin{
+    .swapCoin{
         margin-top: 0px;
     }
 
-    .swupCoin .connectBtn{
+    .swapCoin .connectBtn{
         width: 100%;
         height: 46px;
         border: 0;
@@ -2221,7 +2256,7 @@
         margin-bottom: 10px;
     }
 
-    .swupForm input{
+    .swapForm input{
         outline: 0;
         width: 100%;
         height: 40px;
@@ -2235,10 +2270,15 @@
         direction: rtl;
     }
 
-    .swupTools .material-icons{
+    .swapTools .material-icons{
         font-size: 16px;
         margin: 0 5px;
         margin-bottom: 0px;
+    }
+
+    /* trade */
+    .coinMenu_list{
+        width: 350px;
     }
 
 }
@@ -2967,6 +3007,12 @@
         box-sizing: border-box;
         margin-bottom: 0px;
     }
+
+    /* trade */
+    .coinMenu_list{
+        width: 300px;
+    }
+
 
 }
 
