@@ -3259,9 +3259,18 @@ footer{
 .swupCoinLogo{
 	width: 48px;
 	height: 48px;
-	background-image: url("../img/swup/Doge.png");
+	background-image: url("../img/swup/Bitcoin.png");
 	background-size: cover;
 	margin-right: 10px;
+}
+
+.coinPrice{
+	display:flex;
+	flex-grow: 1;
+	justify-content: flex-end;	
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 .containerSwup{
@@ -3288,7 +3297,7 @@ footer{
 	margin: 0 auto;
 }
 
-.containerSwup .swupHeader h1{
+.containerSwup .swapHeader h1{
 	height: 50px;
 	font-weight: 700;
 	font-size: 16px;
@@ -3297,18 +3306,18 @@ footer{
 	align-items: center;
 }
 
-.containerSwup .swupHeader h2{
+.containerSwup .swapHeader h2{
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
 }
 
-.containerSwup .swupHeader .h2.light{
+.containerSwup .swapHeader .h2.light{
 	color: #786EA6;
 	transition: all .6s;
 }
 
-.containerSwup .swupHeader .h2.dark{
+.containerSwup .swapHeader .h2.dark{
 	color: #B6ADCF;
 	transition: all .6s;
 }
@@ -3352,12 +3361,6 @@ footer{
 	margin-top: 20px;
 }
 
-.coinSelect_1, .coinSelect_2{
-	width: 100%;
-	display: flex;
-	align-items: center;
-}
-
 .coinImg_1, .coinImg_2{
 	width: 25px;
 	height: 25px;
@@ -3366,18 +3369,11 @@ footer{
 }
 
 .coinImg_1{
-	background-image: url("../img/swup/Doge.png");
+	background-image: url("../img/swup/Bitcoin.png");
 }
 
 .coinImg_2{
 	background-image: url("../img/swup/Tether.png");
-}
-
-.coinName_1, .coinName_2{
-	font-weight: 600;
-	font-size: 14px;
-	line-height: 18px;
-	margin-right: 5px;
 }
 
 .exchange{
@@ -3445,6 +3441,164 @@ footer{
 	display: block;
 	margin-top: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Select Coin */
+
+.selectCoin{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 5px;
+}
+
+#selectCoin{
+	width: 100%;
+}
+
+.selectCoin_current {
+	width: 100%;
+	position: relative;
+  	box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  	cursor: pointer;
+  	outline: none;
+  	display: flex;
+  	align-items: center;
+}
+
+.selectCoin_current:focus + .coinMenu_list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.selectCoin_current:focus + .coinMenu_list .coinMenu_option {
+  cursor: pointer;
+}
+
+.selectCoin_current:focus .select-box__icon {
+  transform: rotate(180deg);
+}
+
+.select-box__icon {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	/* transform: translateY(-50%); */
+	transition: 0.2s ease;
+}
+
+.select-box__icon .material-icons{
+	display: block;
+
+	margin: 0 auto;
+}
+
+.select-box__value {
+	display: flex;
+}
+
+.select-box__input {
+  display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+  display: block;
+}
+
+.select-box__input-text {
+  display: none;
+}
+
+.coinMenu_list {
+  position: absolute;
+  width: 80%;
+  height: 300px;
+  overflow: scroll;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-animation-name: HideList;
+          animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.4);
+}
+
+.coinMenu_list.light{
+	color: #250F5B;
+	background-color: #fff;
+}
+
+.coinMenu_list.dark{
+	color: #F4EEFF;
+	background-color: #343339;
+}
+
+.coinMenu_option {
+  display: block;
+  padding: 15px;
+}
+
+.coinMenu_option.light:hover, .coinMenu_option.light:focus {
+  color: #546c84;
+  background-color: #fbfbfb;
+}
+
+.coinMenu_option.dark:hover, .coinMenu_option.dark:focus {
+	color: #F4EEFF;
+	background-color: #27262C;
+  }
+
+@-webkit-keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------trade end------------- */

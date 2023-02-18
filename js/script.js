@@ -90,10 +90,10 @@ let title = ['Decentralized', 'NFT Marketplace', 'Up to 100x Leverage'];
 let des = ['Secured and easy to use', 'Explore, collect, and sell', 'Perpetual Futures'];
 let mySwiper = new Swiper ('#swiper_1', {
     speed: 1000,
-    /* autoplay: {
+    autoplay: {
         pauseOnMouseEnter: true,
         delay: 3000,
-      }, */
+    },
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
