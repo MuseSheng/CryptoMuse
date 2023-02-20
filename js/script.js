@@ -553,7 +553,7 @@ function connectMetaMask(){
 
     $(function(){
         if(window.web3){
-            console.log("有安裝MetaMask");
+            //console.log("有安裝MetaMask");
             // 有安裝 MetaMask
 
             window.web3 = new Web3(window.web3.currentProvider);
@@ -604,7 +604,7 @@ function connectMetaMask(){
         }else{
             $("div[class = 'learnConnect'] > h2").text("Metamask is not installed");
 
-            let metamaskImgUrl = "CryptoMuse/img/metamaskWallet.png";
+            let metamaskImgUrl = "../img/metamaskWallet.png";
             $(".walletImg").css("background-image", `url(${metamaskImgUrl})`);
             $(".learnConnectBtn").attr({
                 onclick: "window.open('https://metamask.io/download/');"
