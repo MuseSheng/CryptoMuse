@@ -584,6 +584,9 @@ function connectMetaMask(){
             /* Slide Connect text change */
             $(".slideBtn > .connectBtn").text("GET IN TOUCH !");
 
+            /* Swap */
+            $(".swapCoin > .connectBtn").text("SWAP");
+
             /* disable section_8 connectWallet BTN */
             $(".wrapper_8 > .connectBtn").css("display", "none");
 
